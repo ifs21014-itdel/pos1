@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<root>
+  <last_id><![CDATA[19258]]></last_id>
+  <total><![CDATA[70]]></total>
+  <sql><![CDATA[ 
+ BEGIN TRANSACTION; 
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7525','900087','900087','LOACKER VANILLA 45GR + NESTLE PURE LIFE PET 330ML','1','1','1',
+			'9021','12500','0','2','15','57',
+			'183','1','false','false','2016-06-21 10:47:17.023562+07',NULL,'true');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7526','900088','900088','LOACKER NAPOLITANER 45GR + NESTLE PL PET 330ML','1','1','1',
+			'9021','12500','0','2','15','57',
+			'183','1','false','false','2016-06-21 10:49:29.44684+07',NULL,'true');
+UPDATE item SET sku='900087', barcode='900087', name='LOACKER VANILLA 45GR + NESTLE PL PET 330ML', carton='1', "inner"='1', uom_id='1', 
+		cost='9021', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-06-21 10:47:17.023562+07', updated_date=NULL,bom_status='true' WHERE id='7525';
+UPDATE item SET sku='900085', barcode='900085', name='CK LASAGNA BEEF + OASIS 330ML', carton='1', "inner"='1', uom_id='1', 
+		cost='7695.46', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-06-21 10:41:53.217006+07', updated_date=NULL,bom_status='true' WHERE id='7521';
+UPDATE item SET sku='900083', barcode='900083', name='CK CHICKEN TERIYAKI + AQUA 330ML', carton='1', "inner"='1', uom_id='1', 
+		cost='12489', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-06-21 10:40:17.839941+07', updated_date=NULL,bom_status='true' WHERE id='7519';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7527','900089','900089','LOACKER CREAM CACAO 45GR + NESTLE PL PET 330ML','1','1','1',
+			'9021','12500','0','2','15','57',
+			'183','1','false','false','2016-06-21 10:51:08.718343+07',NULL,'true');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7528','900090','900090','ASTOR 40GR + TEH PUCUK HARUM LESS SUGAR 350ML','1','1','1',
+			'7439','7000','0','2','15','57',
+			'183','1','false','false','2016-06-21 10:51:53.923005+07',NULL,'true');
+UPDATE item SET sku='900090', barcode='900090', name='ASTOR 40GR + TEH PUCUK HARUM LESS SUGAR 350ML', carton='1', "inner"='1', uom_id='1', 
+		cost='7439', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-06-21 10:51:53.923005+07', updated_date=NULL,bom_status='true' WHERE id='7528';
+UPDATE item SET sku='900090', barcode='900090', name='ASTOR 40GR + TEH PUCUK HARUM LESS SUGAR 350ML', carton='1', "inner"='1', uom_id='1', 
+		cost='5583', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-06-21 10:51:53.923005+07', updated_date=NULL,bom_status='true' WHERE id='7528';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7532','900091','900091','ASTOR 40GR + TEH PUCUK HARUM 350ML','1','1','1',
+			'5583','7000','0','2','15','57',
+			'183','1','false','false','2016-06-21 10:57:00.129488+07',NULL,'true');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7533','900092','900092','LAYS SALMON TERIYAKI 68GR + LOVE JUICE POME 300ML','1','1','1',
+			'12171','15000','0','2','15','57',
+			'183','1','false','false','2016-06-21 11:00:40.030111+07',NULL,'true');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7534','900093','900093','LAYS FIESTA BBQ 68GR + LOVE JUICE POME 300ML','1','1','1',
+			'12171','15000','0','2','15','57',
+			'183','1','false','false','2016-06-21 11:01:28.100816+07',NULL,'true');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7535','900094','900094','LAYS CLASSIC SALTY 68GR + LOVE JUICE POME 300ML','1','1','1',
+			'12171','15000','0','2','15','57',
+			'183','1','false','false','2016-06-21 11:02:08.480601+07',NULL,'true');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7536','900095','900095','LAYS NORI SEAWEED 68GR + LOVE JUICE POME 300ML','1','1','1',
+			'12171','15000','0','2','15','57',
+			'183','1','false','false','2016-06-21 11:02:47.430965+07',NULL,'true');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7537','900096','900096','LAYS AYAM PANGGANG MAYO 68GR + LOVE JUICE POME 300ML','1','1','1',
+			'12171','15000','0','2','15','57',
+			'183','1','false','false','2016-06-21 11:03:44.512934+07',NULL,'true');
+UPDATE item SET sku='204512', barcode='8991771200381', name='VITACIMIN FRUIT PUNCH STRIP 2S', carton='100', "inner"='1', uom_id='1', 
+		cost='1123', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-14 15:42:10.774669+07', updated_date=NULL,bom_status='false' WHERE id='7458';
+UPDATE item SET sku='204511', barcode='8991771200398', name='VITACIMIN ORANGE STRIP 2S', carton='100', "inner"='1', uom_id='1', 
+		cost='1123', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-14 15:40:48.330121+07', updated_date=NULL,bom_status='false' WHERE id='7457';
+UPDATE item SET sku='204510', barcode='8991771200374', name='VITACIMIN BLUEBERRY STRIP 2S', carton='100', "inner"='1', uom_id='1', 
+		cost='1123', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-14 15:40:00.798328+07', updated_date=NULL,bom_status='false' WHERE id='7456';
+UPDATE item SET sku='200970', barcode='8991771200329', name='VITACIMIN ORIGINAL STRIP 2S', carton='100', "inner"='1', uom_id='1', 
+		cost='1123', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='1029';
+UPDATE item SET sku='204512', barcode='8991771200381', name='VITACIMIN FRUIT PUNCH STRIP 2S', carton='50', "inner"='1', uom_id='1', 
+		cost='1123', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-14 15:42:10.774669+07', updated_date=NULL,bom_status='false' WHERE id='7458';
+UPDATE item SET sku='204511', barcode='8991771200398', name='VITACIMIN ORANGE STRIP 2S', carton='50', "inner"='1', uom_id='1', 
+		cost='1123', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-14 15:40:48.330121+07', updated_date=NULL,bom_status='false' WHERE id='7457';
+UPDATE item SET sku='204510', barcode='8991771200374', name='VITACIMIN BLUEBERRY STRIP 2S', carton='50', "inner"='1', uom_id='1', 
+		cost='1123', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-14 15:40:00.798328+07', updated_date=NULL,bom_status='false' WHERE id='7456';
+UPDATE item SET sku='200970', barcode='8991771200329', name='VITACIMIN ORIGINAL STRIP 2S', carton='50', "inner"='1', uom_id='1', 
+		cost='1123', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='1029';
+UPDATE item SET sku='204513', barcode='8991771100926', name='NEVRAMIN PACK 10S', carton='10', "inner"='1', uom_id='1', 
+		cost='9091', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-14 15:43:02.079143+07', updated_date=NULL,bom_status='false' WHERE id='7459';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7538','900097','900097','CK NASI UDUK + SOSRO TEH BOTOL KOTAK 330ML','1','1','1',
+			'10147','15000','0','2','15','57',
+			'183','1','false','false','2016-06-21 11:15:30.289679+07',NULL,'true');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7539','900098','900098','CK NASI KUNING + ICED NESTEA 12OZ','1','1','1',
+			'9264','15000','0','2','15','57',
+			'183','1','false','false','2016-06-21 11:16:56.303336+07',NULL,'true');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('396', '7518', '1', '3411', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('397', '7518', '1', '3824', '1');
+DELETE FROM bill_of_materials_item WHERE id=396;
+DELETE FROM bill_of_materials_item WHERE id=397;
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('398', '7539', '1', '3411', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('399', '7539', '1', '3824', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('400', '7538', '1', '3585', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('401', '7538', '1', '1654', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('402', '7518', '1', '3573', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('403', '7518', '1', '6850', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('404', '7519', '1', '6730', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('405', '7519', '1', '59', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('406', '7520', '1', '1467', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('407', '7520', '1', '1000', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('408', '7521', '1', '2620', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('409', '7521', '1', '5995', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('410', '7522', '1', '4254', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('411', '7522', '1', '2669', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('412', '7525', '2', '2675', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('413', '7525', '1', '694', '1');
+DELETE FROM bill_of_materials_item WHERE id=413;
+DELETE FROM bill_of_materials_item WHERE id=412;
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('414', '7525', '1', '565', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('415', '7525', '1', '694', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('416', '7526', '1', '564', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('417', '7526', '1', '694', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('418', '7527', '1', '563', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('419', '7527', '1', '694', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('420', '7528', '1', '66', '1');
+UPDATE item SET sku='201644', barcode='8990800013978', name='HAPPYDENT WHITE MINT 84GR', carton='1', "inner"='1', uom_id='1', 
+		cost='7091', trading_price='12000', category1='4',  category2='8', 
+		category3='31',category4='171',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='2395';
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('421', '7528', '1', '5396', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('422', '7532', '1', '66', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('423', '7532', '1', '5395', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('424', '7533', '1', '1793', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('425', '7533', '1', '5440', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('426', '7534', '1', '1789', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('427', '7534', '1', '5440', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('428', '7535', '1', '548', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('429', '7535', '1', '5440', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('430', '7536', '1', '5440', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('431', '7536', '1', '550', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('432', '7537', '1', '1790', '1');
+INSERT INTO bill_of_materials_item(id, item_id, qty, raw_item_id, uom_id) VALUES ('433', '7537', '1', '5440', '1');
+INSERT INTO vendor(id, code, name, contact_name, discount, discount_promotion, address, 
+		description, term_of_payment, pkp, npwp, contact_number, phone_number)
+		VALUES ('395', 'S050', 'SOLUSI MESIN HORECA PT.', '087878051759', '0', '0', 'JL TANJUNG RAYA NO. 127, KARAWACI TANGERANG', 
+		'-', '14', 'false', '00.000.', '0', 'KURNIATI');
+
+ update settings set value='19258' where key='ID_SYNC_MASTER' ;
+ END TRANSACTION;]]></sql>
+</root>

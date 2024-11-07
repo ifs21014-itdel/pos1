@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<root>
+  <sql><![CDATA[SET statement_timeout = 0;
+					
+ SET lock_timeout = 0;
+					
+ SET client_encoding = 'UTF8';
+					
+ SET standard_conforming_strings = on;
+					
+ SET check_function_bodies = false;
+					
+ SET client_min_messages = warning;
+				 	
+ BEGIN TRANSACTION; 
+
+INSERT INTO transfer_stock_request VALUES ('7','221302201600006','1','2','2016-06-22','OREO','1','2016-06-21 23:49:05.480303+07','f','1');
+INSERT INTO transfer_stock_request_item VALUES ('29','7','726','20','20',NULL);
+
+ END TRANSACTION;]]></sql>
+</root>

@@ -1,0 +1,1446 @@
+<?xml version="1.0"?>
+<root>
+  <last_id><![CDATA[123653]]></last_id>
+  <total><![CDATA[523]]></total>
+  <sql><![CDATA[ 
+ BEGIN TRANSACTION; 
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002238', '131301201601589', '3', '5', '1', '2016-06-14', 
+		NULL, NULL, '2238', '2', '2016-06-14 15:41:44.337986+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017438', '1313010000000002238', '1022', '35', '17439');
+UPDATE item SET retail_price='19300', cost='13333.33' WHERE id='5353';
+UPDATE item SET retail_price='19300', cost='13333.33' WHERE id='5352';
+UPDATE item SET retail_price='5800', cost='3935.61' WHERE id='1000';
+UPDATE item SET retail_price='5800', cost='3935.61' WHERE id='1008';
+UPDATE item SET retail_price='5800', cost='3935.61' WHERE id='1011';
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213050000000000151', '221305201600151', '8', '10', '1', '2016-06-14', 
+		NULL, NULL, '151', '2', '2016-06-14 20:18:12.219816+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213050000000000817', '2213050000000000151', '4469', '10', '817');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213050000000000818', '2213050000000000151', '3965', '4', '818');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002241', '131301201601592', '3', '5', '1', '2016-06-15', 
+		NULL, NULL, '2241', '2', '2016-06-15 09:34:44.968538+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017499', '1313010000000002241', '1905', '80', '17500');
+UPDATE item SET retail_price='29900', cost='24367' WHERE id='283';
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3539', '2016602591', '205', '2016-06-16', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-15 10:23:51.37701+07', 
+				NULL, NULL);
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39351', '3539', '2763', '1', '1', '5', 
+					'3629', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39349', '3539', '2801', '1', '1', '5', 
+					'3453', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39350', '3539', '7397', '1', '1', '5', 
+					'3000', '5');
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3541', '2016602593', '205', '2016-06-16', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-15 10:31:11.94415+07', 
+				NULL, NULL);
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39456', '3541', '1329', '1', '1', '2', 
+					'7456', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39400', '3541', '1330', '1', '1', '3', 
+					'7863', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39472', '3541', '2567', '1', '1', '5', 
+					'9250', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39459', '3541', '2619', '1', '1', '3', 
+					'7981', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39461', '3541', '2675', '1', '1', '8', 
+					'2400', '8');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39394', '3541', '2764', '1', '1', '5', 
+					'2400', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39460', '3541', '3135', '1', '1', '2', 
+					'7138', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39470', '3541', '3212', '1', '1', '3', 
+					'1713', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39471', '3541', '3218', '1', '1', '3', 
+					'2350', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39467', '3541', '3318', '1', '1', '2', 
+					'1850', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39453', '3541', '3319', '1', '1', '2', 
+					'2000', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39466', '3541', '3403', '1', '1', '5', 
+					'1323', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39399', '3541', '3411', '1', '1', '3', 
+					'6592', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39493', '3541', '3565', '1', '1', '2', 
+					'1087', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39469', '3541', '3567', '1', '1', '2', 
+					'801', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39462', '3541', '3568', '1', '1', '3', 
+					'2004', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39395', '3541', '3570', '1', '1', '5', 
+					'2938', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39401', '3541', '3573', '1', '1', '2', 
+					'6000', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39398', '3541', '3585', '1', '1', '3', 
+					'7480', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39468', '3541', '3621', '1', '1', '2', 
+					'1578', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39500', '3541', '3622', '1', '1', '10', 
+					'475', '10');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39458', '3541', '3733', '1', '1', '2', 
+					'10462', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39397', '3541', '3735', '1', '1', '5', 
+					'3586', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39452', '3541', '3755', '1', '1', '2', 
+					'5668', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39474', '3541', '3758', '1', '1', '2', 
+					'7342', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39455', '3541', '3771', '1', '1', '2', 
+					'8638', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39396', '3541', '3840', '1', '1', '5', 
+					'2400', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39494', '3541', '3841', '1', '1', '2', 
+					'3400', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39463', '3541', '3897', '1', '1', '3', 
+					'2129', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39473', '3541', '4254', '1', '1', '8', 
+					'5885', '8');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39465', '3541', '4299', '1', '1', '2', 
+					'5435', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39454', '3541', '4676', '1', '1', '3', 
+					'2470', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39464', '3541', '4687', '1', '1', '5', 
+					'2038', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39478', '3541', '4814', '1', '1', '2', 
+					'8208', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39457', '3541', '4816', '1', '1', '2', 
+					'7617', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39491', '3541', '5046', '1', '1', '5', 
+					'2080', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39476', '3541', '5186', '1', '1', '2', 
+					'8622', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39477', '3541', '5187', '1', '1', '2', 
+					'9420', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39490', '3541', '5195', '1', '1', '5', 
+					'1586', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39484', '3541', '5469', '1', '1', '5', 
+					'2322', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39483', '3541', '5470', '1', '1', '5', 
+					'2001', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39487', '3541', '5473', '1', '1', '3', 
+					'1325', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39488', '3541', '5474', '1', '1', '3', 
+					'1282', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39481', '3541', '5478', '1', '1', '5', 
+					'1402', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39492', '3541', '5479', '1', '1', '5', 
+					'1229.5', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39480', '3541', '5556', '1', '1', '2', 
+					'6474', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39479', '3541', '5557', '1', '1', '2', 
+					'5578', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39475', '3541', '5562', '1', '1', '2', 
+					'4022', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39486', '3541', '5675', '1', '1', '5', 
+					'1107', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39485', '3541', '5682', '1', '1', '5', 
+					'1020', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39489', '3541', '5684', '1', '1', '5', 
+					'1680', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39499', '3541', '6730', '1', '1', '2', 
+					'11129', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39495', '3541', '7141', '1', '1', '3', 
+					'549', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39496', '3541', '7142', '1', '1', '5', 
+					'693', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39497', '3541', '7143', '1', '1', '8', 
+					'4373', '8');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39498', '3541', '7148', '1', '1', '6', 
+					'1488', '6');
+UPDATE item SET retail_price='8900', cost='5229' WHERE id='7478';
+UPDATE item SET retail_price='13500', cost='9454' WHERE id='7442';
+UPDATE item SET retail_price='13500', cost='9251' WHERE id='7445';
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002246', '131301201601597', '3', '5', '1', '2016-06-16', 
+		NULL, NULL, '2246', '2', '2016-06-16 08:48:31.313722+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017507', '1313010000000002246', '2687', '1', '17508');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017508', '1313010000000002246', '2686', '1', '17509');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002247', '131301201601598', '3', '5', '1', '2016-06-16', 
+		NULL, NULL, '2247', '2', '2016-06-16 09:25:33.280717+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017509', '1313010000000002247', '1012', '48', '17510');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002253', '131301201601604', '3', '5', '1', '2016-06-16', 
+		NULL, NULL, '2253', '2', '2016-06-16 10:59:20.481364+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017528', '1313010000000002253', '6170', '3', '17529');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017529', '1313010000000002253', '6172', '3', '17530');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017530', '1313010000000002253', '6181', '4', '17531');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017531', '1313010000000002253', '6184', '4', '17532');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017532', '1313010000000002253', '6187', '4', '17533');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213020000000000810', '221302201600663', '2', '14', '1', '2016-06-16', 
+		NULL, NULL, '810', '2', '2016-06-16 11:16:21.849729+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004590', '2213020000000000810', '6001', '5', '4591');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004591', '2213020000000000810', '6004', '5', '4592');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004592', '2213020000000000810', '6006', '5', '4593');
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3550', '2016602602', '205', '2016-06-17', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-16 11:56:08.227821+07', 
+				NULL, NULL);
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39513', '3550', '2763', '1', '1', '5', 
+					'3629', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39511', '3550', '2801', '1', '1', '5', 
+					'3453', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39512', '3550', '7397', '1', '1', '5', 
+					'3000', '5');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213020000000000811', '221302201600664', '2', '14', '1', '2016-06-16', 
+		NULL, NULL, '811', '2', '2016-06-16 12:28:39.783744+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004593', '2213020000000000811', '1909', '1', '4594');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004594', '2213020000000000811', '390', '3', '4595');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004595', '2213020000000000811', '391', '2', '4596');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004596', '2213020000000000811', '4055', '4', '4597');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004597', '2213020000000000811', '2884', '2', '4598');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004598', '2213020000000000811', '2669', '5', '4599');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004599', '2213020000000000811', '478', '3', '4600');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004600', '2213020000000000811', '1675', '3', '4601');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004601', '2213020000000000811', '4191', '3', '4602');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004602', '2213020000000000811', '4192', '3', '4603');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004603', '2213020000000000811', '4190', '3', '4604');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004604', '2213020000000000811', '6326', '3', '4605');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004605', '2213020000000000811', '6328', '3', '4606');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004606', '2213020000000000811', '164', '2', '4607');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004607', '2213020000000000811', '1791', '2', '4608');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004608', '2213020000000000811', '2041', '2', '4609');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004609', '2213020000000000811', '2941', '5', '4610');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004610', '2213020000000000811', '2694', '3', '4611');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004611', '2213020000000000811', '2761', '3', '4612');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004612', '2213020000000000811', '2692', '3', '4613');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004613', '2213020000000000811', '384', '2', '4614');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004614', '2213020000000000811', '5332', '2', '4615');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004615', '2213020000000000811', '5331', '1', '4616');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004616', '2213020000000000811', '5330', '1', '4617');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004617', '2213020000000000811', '3853', '2', '4618');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004618', '2213020000000000811', '3851', '2', '4619');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213020000000000812', '221302201600665', '2', '14', '1', '2016-06-16', 
+		NULL, NULL, '812', '2', '2016-06-16 13:15:50.580649+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004619', '2213020000000000812', '4176', '3', '4620');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004620', '2213020000000000812', '4175', '7', '4621');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004621', '2213020000000000812', '4177', '7', '4622');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004622', '2213020000000000812', '2194', '6', '4623');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004623', '2213020000000000812', '4736', '2', '4624');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004624', '2213020000000000812', '2211', '2', '4625');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004625', '2213020000000000812', '4813', '5', '4626');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004626', '2213020000000000812', '853', '3', '4627');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004627', '2213020000000000812', '408', '2', '4628');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004628', '2213020000000000812', '1920', '2', '4629');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004629', '2213020000000000812', '912', '5', '4630');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004630', '2213020000000000812', '916', '5', '4631');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004631', '2213020000000000812', '915', '7', '4632');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004632', '2213020000000000812', '2400', '10', '4633');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004633', '2213020000000000812', '288', '5', '4634');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004634', '2213020000000000812', '284', '3', '4635');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004635', '2213020000000000812', '285', '2', '4636');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004636', '2213020000000000812', '2179', '3', '4637');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213020000000000813', '221302201600666', '2', '14', '1', '2016-06-16', 
+		NULL, NULL, '813', '2', '2016-06-16 13:28:14.864432+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004637', '2213020000000000813', '4166', '3', '4638');
+UPDATE item SET retail_price='15000', cost='7600' WHERE id='6170';
+UPDATE item SET retail_price='15000', cost='8200' WHERE id='6172';
+UPDATE item SET retail_price='15000', cost='8800' WHERE id='6174';
+UPDATE item SET retail_price='15000', cost='7200' WHERE id='6256';
+UPDATE item SET retail_price='15000', cost='6000' WHERE id='6257';
+UPDATE item SET retail_price='15000', cost='6000' WHERE id='6258';
+UPDATE item SET retail_price='13000', cost='6000' WHERE id='6257';
+UPDATE item SET retail_price='13000', cost='6000' WHERE id='6258';
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3552', '2016602604', '205', '2016-06-17', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-16 12:01:46.489482+07', 
+				NULL, NULL);
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39563', '3552', '1329', '1', '1', '2', 
+					'7456', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39564', '3552', '1330', '1', '1', '3', 
+					'7863', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39581', '3552', '2567', '1', '1', '5', 
+					'9250', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39569', '3552', '2619', '1', '1', '3', 
+					'7981', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39570', '3552', '2675', '1', '1', '8', 
+					'2400', '8');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39553', '3552', '2764', '1', '1', '5', 
+					'2400', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39568', '3552', '3135', '1', '1', '2', 
+					'7138', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39579', '3552', '3212', '1', '1', '3', 
+					'1713', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39580', '3552', '3218', '1', '1', '3', 
+					'2350', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39576', '3552', '3318', '1', '1', '2', 
+					'1850', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39555', '3552', '3319', '1', '1', '2', 
+					'2000', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39575', '3552', '3403', '1', '1', '5', 
+					'1323', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39562', '3552', '3411', '1', '1', '3', 
+					'6592', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39601', '3552', '3565', '1', '1', '2', 
+					'1087', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39578', '3552', '3567', '1', '1', '2', 
+					'801', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39571', '3552', '3568', '1', '1', '3', 
+					'2004', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39557', '3552', '3570', '1', '1', '5', 
+					'2938', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39567', '3552', '3573', '1', '1', '2', 
+					'6000', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39561', '3552', '3585', '1', '1', '3', 
+					'7480', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39577', '3552', '3621', '1', '1', '2', 
+					'1578', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39608', '3552', '3622', '1', '1', '10', 
+					'475', '10');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39566', '3552', '3733', '1', '1', '2', 
+					'10462', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39558', '3552', '3735', '1', '1', '5', 
+					'3586', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39554', '3552', '3755', '1', '1', '2', 
+					'5668', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39583', '3552', '3758', '1', '1', '2', 
+					'7342', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39560', '3552', '3771', '1', '1', '2', 
+					'8638', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39559', '3552', '3840', '1', '1', '5', 
+					'2400', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39602', '3552', '3841', '1', '1', '2', 
+					'3400', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39572', '3552', '3897', '1', '1', '3', 
+					'2129', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39582', '3552', '4254', '1', '1', '8', 
+					'5885', '8');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39574', '3552', '4299', '1', '1', '2', 
+					'5435', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39556', '3552', '4676', '1', '1', '3', 
+					'2470', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39573', '3552', '4687', '1', '1', '5', 
+					'2038', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39587', '3552', '4814', '1', '1', '2', 
+					'8208', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39565', '3552', '4816', '1', '1', '2', 
+					'7617', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39599', '3552', '5046', '1', '1', '5', 
+					'2080', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39585', '3552', '5186', '1', '1', '2', 
+					'8622', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39586', '3552', '5187', '1', '1', '2', 
+					'9420', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39598', '3552', '5195', '1', '1', '5', 
+					'1586', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39592', '3552', '5469', '1', '1', '5', 
+					'2322', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39591', '3552', '5470', '1', '1', '5', 
+					'2001', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39595', '3552', '5473', '1', '1', '3', 
+					'1325', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39596', '3552', '5474', '1', '1', '3', 
+					'1282', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39590', '3552', '5478', '1', '1', '5', 
+					'1402', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39600', '3552', '5479', '1', '1', '5', 
+					'1229.5', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39589', '3552', '5556', '1', '1', '2', 
+					'6474', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39588', '3552', '5557', '1', '1', '2', 
+					'5578', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39584', '3552', '5562', '1', '1', '2', 
+					'4022', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39594', '3552', '5675', '1', '1', '5', 
+					'1107', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39593', '3552', '5682', '1', '1', '5', 
+					'1020', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39597', '3552', '5684', '1', '1', '5', 
+					'1680', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39607', '3552', '6730', '1', '1', '2', 
+					'11129', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39603', '3552', '7141', '1', '1', '3', 
+					'549', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39604', '3552', '7142', '1', '1', '5', 
+					'693', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39605', '3552', '7143', '1', '1', '8', 
+					'4373', '8');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39606', '3552', '7148', '1', '1', '6', 
+					'1488', '6');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002257', '131301201601608', '3', '5', '1', '2016-06-16', 
+		NULL, NULL, '2257', '2', '2016-06-16 15:22:24.73429+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017544', '1313010000000002257', '5749', '11', '17545');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017545', '1313010000000002257', '5754', '12', '17546');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017546', '1313010000000002257', '5753', '12', '17547');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017547', '1313010000000002257', '5751', '12', '17548');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017548', '1313010000000002257', '5761', '11', '17549');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017549', '1313010000000002257', '5758', '11', '17550');
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3556', '2016602608', '187', '2016-06-19', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-16 15:32:11.732267+07', 
+				NULL, NULL);
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39660', '3556', '1334', '1', '1', '5', 
+					'6000', '5');
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3560', '2016602612', '205', '2016-06-18', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-16 15:36:36.04824+07', 
+				'7', '2016-06-16 15:45:28.80154+07');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39677', '3560', '2763', '1', '1', '2', 
+					'3629', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39675', '3560', '2801', '1', '1', '2', 
+					'3453', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39676', '3560', '7397', '1', '1', '2', 
+					'3000', '2');
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3559', '2016602611', '205', '2016-06-20', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-16 15:36:12.69537+07', 
+				'7', '2016-06-16 15:45:44.555057+07');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39680', '3559', '2763', '1', '1', '5', 
+					'3629', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39678', '3559', '2801', '1', '1', '5', 
+					'3453', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39679', '3559', '7397', '1', '1', '5', 
+					'3000', '5');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213020000000000814', '221302201600667', '2', '11', '1', '2016-06-16', 
+		NULL, NULL, '814', '2', '2016-06-16 17:42:09.029832+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004638', '2213020000000000814', '2113', '7', '4639');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004639', '2213020000000000814', '32', '5', '4640');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004640', '2213020000000000814', '2114', '4', '4641');
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3569', '2016602620', '150', '2016-06-20', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-17 09:57:16.820363+07', 
+				NULL, NULL);
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39685', '3569', '1467', '1', '1', '40', 
+					'3000', '40');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213020000000000818', '221302201600671', '2', '15', '1', '2016-06-17', 
+		NULL, NULL, '818', '2', '2016-06-17 10:14:51.30655+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004651', '2213020000000000818', '4179', '9', '4652');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002259', '131301201601610', '3', '5', '1', '2016-06-17', 
+		NULL, NULL, '2259', '2', '2016-06-17 10:38:14.794761+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017601', '1313010000000002259', '507', '12', '17602');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017602', '1313010000000002259', '2805', '12', '17603');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017603', '1313010000000002259', '4154', '12', '17604');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017604', '1313010000000002259', '58', '12', '17605');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017605', '1313010000000002259', '1220', '250', '17606');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017606', '1313010000000002259', '1052', '21', '17607');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017607', '1313010000000002259', '1008', '12', '17608');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017608', '1313010000000002259', '1006', '12', '17609');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017609', '1313010000000002259', '883', '16', '17610');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017610', '1313010000000002259', '1905', '34', '17611');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017611', '1313010000000002259', '1026', '24', '17612');
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3564', '2016602615', '205', '2016-06-18', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-17 09:53:30.421299+07', 
+				NULL, NULL);
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39697', '3564', '1329', '1', '1', '2', 
+					'7456', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39696', '3564', '1330', '1', '1', '2', 
+					'7863', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39701', '3564', '2567', '1', '1', '2', 
+					'9250', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39698', '3564', '2675', '1', '1', '3', 
+					'2400', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39691', '3564', '2764', '1', '1', '2', 
+					'2400', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39700', '3564', '3403', '1', '1', '3', 
+					'1323', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39695', '3564', '3411', '1', '1', '2', 
+					'6592', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39692', '3564', '3570', '1', '1', '2', 
+					'2938', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39694', '3564', '3585', '1', '1', '2', 
+					'7480', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39693', '3564', '3735', '1', '1', '2', 
+					'3586', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39699', '3564', '4687', '1', '1', '3', 
+					'2038', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39703', '3564', '5470', '1', '1', '5', 
+					'2001', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39702', '3564', '5478', '1', '1', '5', 
+					'1402', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39704', '3564', '7142', '1', '1', '5', 
+					'693', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39705', '3564', '7143', '1', '1', '3', 
+					'4373', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39706', '3564', '7148', '1', '1', '3', 
+					'1488', '3');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002263', '131301201601614', '3', '5', '1', '2016-06-17', 
+		NULL, NULL, '2263', '2', '2016-06-17 13:43:13.6288+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017616', '1313010000000002263', '1022', '20', '17617');
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3580', '2016602630', '36', '2016-06-18', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-17 14:19:35.532113+07', 
+				'7', '2016-06-17 14:19:50.201063+07');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39772', '3580', '1188', '1', '1', '12', 
+					'11550', '12');
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3576', '2016602626', '205', '2016-06-20', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-17 14:16:17.814306+07', 
+				NULL, NULL);
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39783', '3576', '1329', '1', '1', '2', 
+					'7456', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39784', '3576', '1330', '1', '1', '3', 
+					'7863', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39801', '3576', '2567', '1', '1', '5', 
+					'9250', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39788', '3576', '2619', '1', '1', '3', 
+					'7981', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39790', '3576', '2675', '1', '1', '8', 
+					'2400', '8');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39773', '3576', '2764', '1', '1', '5', 
+					'2400', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39789', '3576', '3135', '1', '1', '2', 
+					'7138', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39799', '3576', '3212', '1', '1', '3', 
+					'1713', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39800', '3576', '3218', '1', '1', '3', 
+					'2350', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39796', '3576', '3318', '1', '1', '2', 
+					'1850', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39775', '3576', '3319', '1', '1', '2', 
+					'2000', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39795', '3576', '3403', '1', '1', '5', 
+					'1323', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39782', '3576', '3411', '1', '1', '3', 
+					'6592', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39827', '3576', '3565', '1', '1', '2', 
+					'1087', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39798', '3576', '3567', '1', '1', '2', 
+					'801', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39791', '3576', '3568', '1', '1', '3', 
+					'2004', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39777', '3576', '3570', '1', '1', '5', 
+					'2938', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39787', '3576', '3573', '1', '1', '2', 
+					'6000', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39781', '3576', '3585', '1', '1', '3', 
+					'7480', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39797', '3576', '3621', '1', '1', '2', 
+					'1578', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39836', '3576', '3622', '1', '1', '10', 
+					'475', '10');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39786', '3576', '3733', '1', '1', '2', 
+					'10462', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39779', '3576', '3735', '1', '1', '5', 
+					'3586', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39774', '3576', '3755', '1', '1', '2', 
+					'5668', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39804', '3576', '3758', '1', '1', '2', 
+					'7342', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39780', '3576', '3771', '1', '1', '2', 
+					'8638', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39778', '3576', '3840', '1', '1', '5', 
+					'2400', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39829', '3576', '3841', '1', '1', '2', 
+					'3400', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39792', '3576', '3897', '1', '1', '3', 
+					'2129', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39802', '3576', '4254', '1', '1', '8', 
+					'5885', '8');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39794', '3576', '4299', '1', '1', '2', 
+					'5435', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39776', '3576', '4676', '1', '1', '3', 
+					'2470', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39793', '3576', '4687', '1', '1', '5', 
+					'2038', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39808', '3576', '4814', '1', '1', '2', 
+					'8208', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39785', '3576', '4816', '1', '1', '2', 
+					'7617', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39821', '3576', '5046', '1', '1', '5', 
+					'2080', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39806', '3576', '5186', '1', '1', '2', 
+					'8622', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39807', '3576', '5187', '1', '1', '2', 
+					'9420', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39820', '3576', '5195', '1', '1', '5', 
+					'1586', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39813', '3576', '5469', '1', '1', '5', 
+					'2322', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39812', '3576', '5470', '1', '1', '5', 
+					'2001', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39816', '3576', '5473', '1', '1', '3', 
+					'1325', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39817', '3576', '5474', '1', '1', '3', 
+					'1282', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39811', '3576', '5478', '1', '1', '5', 
+					'1402', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39823', '3576', '5479', '1', '1', '5', 
+					'1229.5', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39810', '3576', '5556', '1', '1', '2', 
+					'6474', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39809', '3576', '5557', '1', '1', '2', 
+					'5578', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39805', '3576', '5562', '1', '1', '2', 
+					'4022', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39815', '3576', '5675', '1', '1', '5', 
+					'1107', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39814', '3576', '5682', '1', '1', '5', 
+					'1020', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39818', '3576', '5684', '1', '1', '5', 
+					'1680', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39835', '3576', '6730', '1', '1', '2', 
+					'11129', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39830', '3576', '7141', '1', '1', '3', 
+					'549', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39831', '3576', '7142', '1', '1', '5', 
+					'693', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39833', '3576', '7143', '1', '1', '8', 
+					'4373', '8');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('39834', '3576', '7148', '1', '1', '6', 
+					'1488', '6');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213020000000000821', '221302201600674', '2', '11', '1', '2016-06-17', 
+		NULL, NULL, '821', '2', '2016-06-17 16:58:25.007343+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004659', '2213020000000000821', '605', '20', '4660');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004660', '2213020000000000821', '603', '10', '4661');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004661', '2213020000000000821', '842', '20', '4662');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004662', '2213020000000000821', '708', '5', '4663');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004663', '2213020000000000821', '2513', '5', '4664');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004664', '2213020000000000821', '707', '5', '4665');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004665', '2213020000000000821', '5440', '5', '4666');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004666', '2213020000000000821', '2515', '5', '4667');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004667', '2213020000000000821', '2241', '4', '4668');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004668', '2213020000000000821', '2367', '6', '4669');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002266', '131301201601617', '3', '5', '1', '2016-06-18', 
+		NULL, NULL, '2266', '2', '2016-06-18 10:44:43.422839+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017626', '1313010000000002266', '1026', '24', '17627');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017627', '1313010000000002266', '58', '12', '17628');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017628', '1313010000000002266', '2240', '12', '17629');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017629', '1313010000000002266', '1025', '12', '17630');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017630', '1313010000000002266', '2121', '12', '17631');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017631', '1313010000000002266', '2241', '12', '17632');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017632', '1313010000000002266', '2367', '12', '17633');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017633', '1313010000000002266', '826', '12', '17634');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017634', '1313010000000002266', '2354', '12', '17635');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017635', '1313010000000002266', '1013', '24', '17636');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017636', '1313010000000002266', '1012', '24', '17637');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017637', '1313010000000002266', '1000', '24', '17638');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017638', '1313010000000002266', '883', '24', '17639');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017639', '1313010000000002266', '750', '24', '17640');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017640', '1313010000000002266', '52', '48', '17641');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017641', '1313010000000002266', '1367', '100', '17642');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017642', '1313010000000002266', '1208', '100', '17643');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017643', '1313010000000002266', '1434', '200', '17644');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017644', '1313010000000002266', '2379', '24', '17645');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017645', '1313010000000002266', '2669', '24', '17646');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017646', '1313010000000002266', '2239', '12', '17647');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017647', '1313010000000002266', '695', '24', '17648');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213020000000000830', '221302201600683', '2', '11', '1', '2016-06-19', 
+		NULL, NULL, '830', '2', '2016-06-19 15:05:19.048026+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004706', '2213020000000000830', '2194', '6', '4707');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004707', '2213020000000000830', '33', '6', '4708');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004708', '2213020000000000830', '6413', '4', '4709');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004709', '2213020000000000830', '2649', '2', '4710');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004710', '2213020000000000830', '720', '2', '4711');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004711', '2213020000000000830', '721', '1', '4712');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004712', '2213020000000000830', '958', '2', '4713');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004713', '2213020000000000830', '954', '2', '4714');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004714', '2213020000000000830', '955', '1', '4715');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004715', '2213020000000000830', '527', '3', '4716');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004716', '2213020000000000830', '526', '1', '4717');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004717', '2213020000000000830', '3695', '5', '4718');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004719', '2213020000000000830', '1973', '2', '4720');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004720', '2213020000000000830', '874', '5', '4721');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004721', '2213020000000000830', '3518', '2', '4722');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004722', '2213020000000000830', '873', '5', '4723');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004723', '2213020000000000830', '780', '6', '4724');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004724', '2213020000000000830', '75', '5', '4725');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004725', '2213020000000000830', '2012', '2', '4726');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004726', '2213020000000000830', '2013', '1', '4727');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213070000000000363', '221307201600339', '5', '14', '1', '2016-06-19', 
+		NULL, NULL, '426', '2', '2016-06-19 17:48:47.07239+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213070000000001448', '2213070000000000363', '66', '16', '1449');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213070000000001449', '2213070000000000363', '4080', '12', '1450');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213050000000000170', '221305201600170', '8', '15', '1', '2016-06-19', 
+		NULL, NULL, '170', '2', '2016-06-19 18:11:19.978222+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213050000000000887', '2213050000000000170', '3517', '6', '887');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213050000000000888', '2213050000000000170', '2370', '4', '888');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213050000000000889', '2213050000000000170', '2650', '2', '889');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213050000000000890', '2213050000000000170', '2040', '8', '890');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002269', '131301201601620', '3', '5', '1', '2016-06-20', 
+		NULL, NULL, '2269', '2', '2016-06-20 09:44:31.0595+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017652', '1313010000000002269', '7436', '12', '17653');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017653', '1313010000000002269', '7437', '12', '17654');
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3599', '2016602649', '187', '2016-06-20', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-20 10:26:14.023685+07', 
+				NULL, NULL);
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40090', '3599', '1049', '1', '1', '5', 
+					'6800', '5');
+UPDATE item SET retail_price='6500', cost='4167' WHERE id='962';
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002274', '131301201601625', '3', '5', '1', '2016-06-20', 
+		NULL, NULL, '2274', '2', '2016-06-20 11:55:14.885226+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017679', '1313010000000002274', '1022', '49', '17680');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017680', '1313010000000002274', '3843', '5', '17681');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017681', '1313010000000002274', '59', '120', '17682');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002277', '131301201601628', '3', '5', '1', '2016-06-20', 
+		NULL, NULL, '2277', '2', '2016-06-20 12:36:09.984175+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017709', '1313010000000002277', '2686', '1', '17710');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017710', '1313010000000002277', '2085', '10', '17711');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017711', '1313010000000002277', '2853', '16', '17712');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017712', '1313010000000002277', '2370', '9', '17713');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017713', '1313010000000002277', '958', '6', '17714');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017714', '1313010000000002277', '3518', '12', '17715');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017715', '1313010000000002277', '2725', '5', '17716');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017716', '1313010000000002277', '2644', '9', '17717');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017717', '1313010000000002277', '1973', '6', '17718');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017718', '1313010000000002277', '2692', '6', '17719');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017719', '1313010000000002277', '957', '6', '17720');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017720', '1313010000000002277', '721', '6', '17721');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017721', '1313010000000002277', '954', '6', '17722');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017722', '1313010000000002277', '2649', '6', '17723');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017723', '1313010000000002277', '2650', '6', '17724');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017724', '1313010000000002277', '4950', '8', '17725');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017725', '1313010000000002277', '4948', '8', '17726');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017726', '1313010000000002277', '4949', '8', '17727');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213020000000000832', '221302201600685', '2', '11', '1', '2016-06-20', 
+		NULL, NULL, '832', '2', '2016-06-20 12:55:47.227007+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004752', '2213020000000000832', '843', '100', '4753');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004753', '2213020000000000832', '3875', '100', '4754');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004754', '2213020000000000832', '995', '100', '4755');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004755', '2213020000000000832', '216', '50', '4756');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004756', '2213020000000000832', '3876', '50', '4757');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004757', '2213020000000000832', '214', '40', '4758');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004758', '2213020000000000832', '601', '70', '4759');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004759', '2213020000000000832', '605', '90', '4760');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004760', '2213020000000000832', '602', '50', '4761');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004761', '2213020000000000832', '604', '50', '4762');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004762', '2213020000000000832', '842', '70', '4763');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004763', '2213020000000000832', '603', '90', '4764');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004765', '2213020000000000832', '5415', '50', '4766');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004766', '2213020000000000832', '5414', '10', '4767');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002279', '131301201601630', '3', '5', '1', '2016-06-20', 
+		NULL, NULL, '2279', '2', '2016-06-20 13:32:26.152075+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017728', '1313010000000002279', '7376', '6', '17729');
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3605', '2016602655', '205', '2016-06-21', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-20 10:54:17.813431+07', 
+				NULL, NULL);
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40131', '3605', '1329', '1', '1', '2', 
+					'7456', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40130', '3605', '1330', '1', '1', '2', 
+					'7863', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40146', '3605', '2567', '1', '1', '3', 
+					'9250', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40135', '3605', '2619', '1', '1', '2', 
+					'7981', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40141', '3605', '2620', '1', '1', '5', 
+					'6900', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40137', '3605', '2675', '1', '1', '7', 
+					'2400', '7');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40097', '3605', '2764', '1', '1', '7', 
+					'2400', '7');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40136', '3605', '3135', '1', '1', '2', 
+					'7138', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40144', '3605', '3212', '1', '1', '5', 
+					'1713', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40145', '3605', '3218', '1', '1', '5', 
+					'2350', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40143', '3605', '3403', '1', '1', '5', 
+					'1323', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40104', '3605', '3411', '1', '1', '2', 
+					'6592', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40138', '3605', '3568', '1', '1', '5', 
+					'2004', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40099', '3605', '3570', '1', '1', '7', 
+					'2938', '7');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40134', '3605', '3573', '1', '1', '1', 
+					'6000', '1');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40103', '3605', '3585', '1', '1', '2', 
+					'7480', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40133', '3605', '3733', '1', '1', '1', 
+					'10462', '1');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40101', '3605', '3735', '1', '1', '7', 
+					'3586', '7');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40147', '3605', '3758', '1', '1', '2', 
+					'7342', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40102', '3605', '3771', '1', '1', '1', 
+					'8638', '1');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40100', '3605', '3840', '1', '1', '5', 
+					'2400', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40139', '3605', '3897', '1', '1', '3', 
+					'2129', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40142', '3605', '4299', '1', '1', '1', 
+					'5435', '1');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40098', '3605', '4676', '1', '1', '3', 
+					'2470', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40140', '3605', '4687', '1', '1', '5', 
+					'2038', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40132', '3605', '4816', '1', '1', '1', 
+					'7617', '1');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40160', '3605', '5046', '1', '1', '5', 
+					'2080', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40159', '3605', '5195', '1', '1', '3', 
+					'1586', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40153', '3605', '5469', '1', '1', '7', 
+					'2322', '7');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40152', '3605', '5470', '1', '1', '10', 
+					'2001', '10');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40156', '3605', '5473', '1', '1', '3', 
+					'1325', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40157', '3605', '5474', '1', '1', '3', 
+					'1282', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40151', '3605', '5478', '1', '1', '10', 
+					'1402', '10');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40161', '3605', '5479', '1', '1', '10', 
+					'1229.5', '10');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40150', '3605', '5556', '1', '1', '2', 
+					'6474', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40149', '3605', '5557', '1', '1', '2', 
+					'5578', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40148', '3605', '5562', '1', '1', '2', 
+					'4022', '2');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40155', '3605', '5675', '1', '1', '5', 
+					'1107', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40154', '3605', '5682', '1', '1', '10', 
+					'1020', '10');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40158', '3605', '5684', '1', '1', '3', 
+					'1680', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40166', '3605', '6730', '1', '1', '1', 
+					'11129', '1');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40162', '3605', '7141', '1', '1', '3', 
+					'549', '3');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40163', '3605', '7142', '1', '1', '5', 
+					'693', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40164', '3605', '7143', '1', '1', '10', 
+					'4373', '10');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40165', '3605', '7148', '1', '1', '8', 
+					'1488', '8');
+INSERT INTO purchase_order(id, reference, vendor_id, shipment_date, shipment_address, store_destination_id, 
+				status, currency, discount, approved_by, created_by, created_date, updated_by, updated_date)
+				VALUES ('3604', '2016602654', '205', '2016-06-21', 'Jl. Boulevard Raya Lot 1 
+Gading Serpong 
+Bencongan Kelapa Dua 
+Tangerang 15810', '1', 
+				'3', 'IDR', '0', NULL, '7', '2016-06-20 10:54:07.314111+07', 
+				NULL, NULL);
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40096', '3604', '2763', '1', '1', '5', 
+					'3629', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40095', '3604', '2801', '1', '1', '5', 
+					'3453', '5');
+INSERT INTO purchase_order_item(id, purchase_order_id, item_id, uom_id, unit_conversion, quantity,price, outstanding_receive)
+					VALUES ('40094', '3604', '7397', '1', '1', '5', 
+					'3000', '5');
+UPDATE item SET retail_price='79000', cost='52800' WHERE id='4697';
+UPDATE item SET retail_price='77000', cost='52800' WHERE id='4697';
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213020000000000833', '221302201600686', '2', '15', '1', '2016-06-20', 
+		NULL, NULL, '833', '2', '2016-06-20 16:44:41.45146+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004767', '2213020000000000833', '2558', '12', '4768');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004768', '2213020000000000833', '162', '12', '4769');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004769', '2213020000000000833', '726', '24', '4770');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004770', '2213020000000000833', '408', '12', '4771');
+UPDATE item SET retail_price='125000', cost='107557.17' WHERE id='4355';
+UPDATE item SET retail_price='71500', cost='61229.5' WHERE id='4359';
+UPDATE item SET retail_price='149000', cost='138155' WHERE id='4375';
+UPDATE item SET retail_price='160000', cost='138155' WHERE id='4375';
+UPDATE item SET retail_price='78000', cost='71513' WHERE id='4384';
+UPDATE item SET retail_price='149000', cost='138155' WHERE id='4375';
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('1313010000000002282', '131301201601633', '3', '5', '1', '2016-06-21', 
+		NULL, NULL, '2282', '2', '2016-06-21 09:29:50.84709+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017738', '1313010000000002282', '52', '24', '17739');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017739', '1313010000000002282', '695', '24', '17740');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017740', '1313010000000002282', '1000', '24', '17741');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017741', '1313010000000002282', '1012', '24', '17742');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017742', '1313010000000002282', '1013', '24', '17743');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017743', '1313010000000002282', '227', '20', '17744');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017744', '1313010000000002282', '2496', '6', '17745');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017745', '1313010000000002282', '316', '6', '17746');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017746', '1313010000000002282', '315', '6', '17747');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017747', '1313010000000002282', '3210', '300', '17748');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017748', '1313010000000002282', '1394', '5', '17749');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017749', '1313010000000002282', '507', '6', '17750');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017750', '1313010000000002282', '5772', '6', '17751');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017751', '1313010000000002282', '2', '6', '17752');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017752', '1313010000000002282', '5775', '6', '17753');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017753', '1313010000000002282', '4', '6', '17754');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017754', '1313010000000002282', '3856', '5', '17755');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017755', '1313010000000002282', '3691', '5', '17756');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017756', '1313010000000002282', '2512', '24', '17757');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017757', '1313010000000002282', '1434', '200', '17758');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('1313010000000017769', '1313010000000002282', '1214', '100', '17770');
+INSERT INTO stock_transfer_manifest(id, code, store_source_id, user_id, store_destination_id, ship_date, 
+		received_by, received_date, transaction_id, status, created_date, is_synchronized)
+		VALUES ('2213020000000000834', '221302201600687', '2', '11', '1', '2016-06-21', 
+		NULL, NULL, '834', '2', '2016-06-21 10:13:08.138414+07', 
+		'false');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004771', '2213020000000000834', '1607', '8', '4772');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004772', '2213020000000000834', '2194', '8', '4773');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004773', '2213020000000000834', '4719', '5', '4774');
+INSERT INTO stock_transfer_manifest_item(id, stock_transfer_manifest_id, item_id, quantity, transaction_id)
+		VALUES ('2213020000000004774', '2213020000000000834', '4718', '5', '4775');
+
+ update settings set value='123653' where key='ID_SYNC_TRANSACTION' ;
+ END TRANSACTION;]]></sql>
+</root>

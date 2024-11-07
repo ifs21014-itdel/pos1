@@ -1,0 +1,4 @@
+CREATE TABLE sania
+(
+  id bigint NOT NULL
+)

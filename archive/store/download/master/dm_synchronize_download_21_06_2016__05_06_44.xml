@@ -1,0 +1,957 @@
+<?xml version="1.0"?>
+<root>
+  <last_id><![CDATA[19188]]></last_id>
+  <total><![CDATA[184]]></total>
+  <sql><![CDATA[ 
+ BEGIN TRANSACTION; 
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7456','204510','8991771200374','VITACIMIN BLUEBERRY STRIP 2S','1','1','1',
+			'1122','3000','0','4','10','47',
+			'275','1','true','false','2016-06-14 15:40:00.798328+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7457','204511','8991771200398','VITACIMIN ORANGE STRIP 2S','1','1','1',
+			'1122','3000','0','4','10','47',
+			'275','1','true','false','2016-06-14 15:40:48.330121+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7458','204512','8991771200381','VITACIMIN FRUIT PUNCH STRIP 2S','1','1','1',
+			'1122','3000','0','4','10','47',
+			'275','1','true','false','2016-06-14 15:42:10.774669+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7459','204513','8991771100926','NEVRAMIN PACK 10S','1','1','1',
+			'9091','14500','0','4','10','47',
+			'275','1','true','false','2016-06-14 15:43:02.079143+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7460','204514','8991771200442','VITACIMIN ORIGINAL PACK 20S','30','1','1',
+			'11200','17600','0','4','10','47',
+			'275','1','true','false','2016-06-14 15:44:04.511713+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7461','204515','8991771200459','VITACIMIN ORANGE PACK 20S','30','1','1',
+			'11200','17600','0','4','10','47',
+			'275','1','true','false','2016-06-14 15:44:47.485841+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7462','204516','8991771200473','VITACIMIN BLUEBERRY PACK 20S','30','1','1',
+			'11200','17600','0','4','10','47',
+			'275','1','true','false','2016-06-14 15:45:34.278121+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7463','204517','8991771200466','VITACIMIN FRUIT PUNCH PACK 20S','30','1','1',
+			'11200','17600','0','4','10','47',
+			'275','1','true','false','2016-06-14 15:47:16.479789+07',NULL,'false');
+UPDATE item SET sku='100641', barcode='151558', name='CK MIE GORENG AYAM', carton='1', "inner"='1', uom_id='1', 
+		cost='7981', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='2619';
+UPDATE item SET sku='100302', barcode='2914', name='CK NASI GORENG AYAM', carton='1', "inner"='1', uom_id='1', 
+		cost='7863', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='1330';
+UPDATE item SET sku='203212', barcode='8998009010613', name='ULTRA MILK PLAIN 1000ML', carton='12', "inner"='1', uom_id='1', 
+		cost='13333.33', trading_price='0', category1='4',  category2='7', 
+		category3='29',category4='155',type='1', taxed='true', consignment='false', 
+		created_date='2016-02-26 10:48:34.811339+07', updated_date=NULL,bom_status='false' WHERE id='5353';
+UPDATE item SET sku='203213', barcode='8998009010620', name='ULTRA MILK CHOCO1000ML', carton='12', "inner"='1', uom_id='1', 
+		cost='13333.33', trading_price='0', category1='4',  category2='7', 
+		category3='29',category4='155',type='1', taxed='true', consignment='false', 
+		created_date='2016-02-26 10:46:43.839369+07', updated_date=NULL,bom_status='false' WHERE id='5352';
+UPDATE item SET sku='200941', barcode='8998009010231', name='ULTRA MILK CHOCOLATE 250ML', carton='24', "inner"='1', uom_id='1', 
+		cost='3935.61', trading_price='5800', category1='4',  category2='7', 
+		category3='29',category4='155',type='1', taxed='true', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='1000';
+UPDATE item SET sku='200949', barcode='8998009010224', name='ULTRA MILK PLAIN 250ML', carton='24', "inner"='1', uom_id='1', 
+		cost='3935.61', trading_price='0', category1='4',  category2='7', 
+		category3='29',category4='155',type='1', taxed='true', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='1008';
+UPDATE item SET sku='200952', barcode='8998009010248', name='ULTRA MILK STRAWBERRY 250ML', carton='24', "inner"='1', uom_id='1', 
+		cost='3935.61', trading_price='0', category1='4',  category2='7', 
+		category3='29',category4='155',type='1', taxed='true', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='1011';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7464','300207','300207','PARCEL DINNER SET','1','1','1',
+			'650000','750000','750000','3','12','77',
+			'202','3','true','false','2016-06-14 16:56:21.691089+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7465','204518','204518','PARCEL PAKET 1','1','1','1',
+			'400000','550000','550000','4','8','41',
+			'247','3','true','false','2016-06-14 17:00:07.517694+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7466','204519','204519','PARCEL PAKET 2','1','1','1',
+			'450000','650000','650000','4','8','41',
+			'247','3','true','false','2016-06-14 17:00:58.518205+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7467','204520','204520','PARCEL PAKET 3','1','1','1',
+			'500000','750000','750000','4','8','41',
+			'247','3','true','false','2016-06-14 17:01:43.024277+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7468','204521','204521','PARCEL COOKIES 3S','1','1','1',
+			'275000','350000','350000','4','8','41',
+			'247','3','true','false','2016-06-14 17:02:27.174238+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7469','204522','204522','PARCEL COOKIES 4S','1','1','1',
+			'350000','450000','450000','4','8','41',
+			'247','3','true','false','2016-06-14 17:03:08.322204+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7470','204523','204523','PARCEL PAKET HEMAT','1','1','1',
+			'140250','165000','165000','4','8','41',
+			'247','3','true','false','2016-06-14 17:03:46.940723+07',NULL,'false');
+UPDATE item SET sku='200231', barcode='8992826111089', name='FILMA POUCH 2LT', carton='6', "inner"='1', uom_id='1', 
+		cost='24367', trading_price='0', category1='4',  category2='8', 
+		category3='35',category4='229',type='1', taxed='true', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='283';
+UPDATE item SET sku='200231', barcode='8992826111089', name='FILMA POUCH 2L', carton='6', "inner"='1', uom_id='1', 
+		cost='24367', trading_price='0', category1='4',  category2='8', 
+		category3='35',category4='229',type='1', taxed='true', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='283';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7471','204524','8992826111034','FILMA BOTOL 1L','12','1','1',
+			'13167','15900','0','4','8','35',
+			'229','1','true','false','2016-06-15 10:21:48.007929+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7472','300208','8994983000015','LPG BRIGHT GAS CAN 220GR','6','1','1',
+			'16500','22000','0','3','14','77',
+			'168','1','true','false','2016-06-15 11:45:41.30098+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7473','300209','300209','LPG BRIGHT GAS 5.5KG','1','1','1',
+			'65000','72500','0','3','14','77',
+			'168','1','true','false','2016-06-15 12:12:37.946862+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7474','300210','300210','LPG BRIGHT GAS 5.5KG + TABUNG','1','1','1',
+			'350000','385000','0','3','14','77',
+			'168','1','true','false','2016-06-15 12:14:17.040952+07',NULL,'false');
+UPDATE item SET sku='200690', barcode='200690', name='PRISTINE 600ML', carton='1', "inner"='1', uom_id='1', 
+		cost='1553', trading_price='0', category1='4',  category2='8', 
+		category3='48',category4='119',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='770';
+UPDATE item SET sku='200606', barcode='200606', name='NAVIKA ROOT BEER BTL 250ML', carton='1', "inner"='1', uom_id='1', 
+		cost='4767', trading_price='0', category1='4',  category2='7', 
+		category3='26',category4='250',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='686';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7475','204525','8999510785540','PRISTINE WATER 400ML','24','1','1',
+			'2182','3600','0','4','7','34',
+			'279','1','true','false','2016-06-15 13:56:48.659101+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7476','204526','8999510785465','PRISTINE WATER 600ML','24','1','1',
+			'2909','4900','0','4','7','34',
+			'279','1','true','false','2016-06-15 13:58:21.933531+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7477','204527','8999510785472','PRISTINE WATER 1500ML','12','1','1',
+			'5455','8500','0','4','7','34',
+			'279','1','true','false','2016-06-15 13:59:29.799688+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7478','204528','8999510800113','ROOT BEER OWB 250ML','24','1','1',
+			'5229','8200','0','4','7','26',
+			'250','1','true','false','2016-06-15 14:09:56.897326+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7479','204529','8999510933002','ZODA LEMONADE CAN 330ML','24','1','1',
+			'5229','8200','0','4','7','26',
+			'250','1','true','false','2016-06-15 14:11:49.329121+07',NULL,'false');
+UPDATE item SET sku='204528', barcode='8999510800113', name='ROOT BEER OWB 250ML', carton='24', "inner"='1', uom_id='1', 
+		cost='5229', trading_price='0', category1='4',  category2='7', 
+		category3='26',category4='250',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-15 14:09:56.897326+07', updated_date=NULL,bom_status='false' WHERE id='7478';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7480','204530','8999510940000','ZODA STRAWBERRY CAN 330ML','24','1','1',
+			'5229','8200','0','4','7','26',
+			'250','1','true','false','2016-06-15 14:37:04.231331+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7481','204531','8999510941007','ZODA GRAPE CAN 330ML','24','1','1',
+			'5229','8200','0','4','7','26',
+			'250','1','true','false','2016-06-15 14:38:43.475299+07',NULL,'false');
+UPDATE vendor
+   		SET code='S049', name='Sinarmas Distribusi Nusantara. PT', contact_name='Faithy Juwita', discount='0', discount_promotion='0', 
+		address='Jl. Rawa Girang No.3 Kawasan Industri Pulo Gadung Jatinegara - Cakung Jakarta 13930', description='-', term_of_payment='30', pkp='true', npwp='01.604.506.4-007.000', contact_number='08881905210', 
+		phone_number='021-4602050-51'
+ 		WHERE id='389';
+UPDATE item SET sku='900075', barcode='900075', name='CK MIE GORENG AYAM + VIT WATER BTL 600ML', carton='1', "inner"='1', uom_id='1', 
+		cost='9251', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-06-13 06:08:49.670713+07', updated_date=NULL,bom_status='true' WHERE id='7445';
+UPDATE item SET sku='900073', barcode='900073', name='CK NASI GORENG AYAM + CLEO ECOSHAPE 550 ML', carton='1', "inner"='1', uom_id='1', 
+		cost='9454', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-06-13 06:03:48.438089+07', updated_date=NULL,bom_status='true' WHERE id='7442';
+UPDATE item SET sku='102045', barcode='102045', name='SIOMAY UDANG KUKUS 4S', carton='1', "inner"='1', uom_id='1', 
+		cost='7600', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-20 18:10:13.302326+07', updated_date=NULL,bom_status='false' WHERE id='6170';
+UPDATE item SET sku='102047', barcode='102047', name='HAKAO KUKUS 4S', carton='1', "inner"='1', uom_id='1', 
+		cost='8200', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-20 18:26:36.68121+07', updated_date=NULL,bom_status='false' WHERE id='6172';
+UPDATE item SET sku='102049', barcode='102049', name='LUMPIA UDANG GORENG 4S', carton='1', "inner"='1', uom_id='1', 
+		cost='8800', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-20 18:33:01.886284+07', updated_date=NULL,bom_status='false' WHERE id='6174';
+UPDATE item SET sku='102055', barcode='102055', name='BAKPAO AYAM 4S', carton='1', "inner"='1', uom_id='1', 
+		cost='7200', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-20 18:48:38.980697+07', updated_date=NULL,bom_status='false' WHERE id='6181';
+UPDATE item SET sku='102057', barcode='102057', name='BAKPAO COKELAT 4S', carton='1', "inner"='1', uom_id='1', 
+		cost='6000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-20 18:51:31.798705+07', updated_date=NULL,bom_status='false' WHERE id='6184';
+UPDATE item SET sku='102059', barcode='102059', name='BAKPAO KACANG MERAH 4S', carton='1', "inner"='1', uom_id='1', 
+		cost='6000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-20 18:55:11.019288+07', updated_date=NULL,bom_status='false' WHERE id='6187';
+UPDATE item SET sku='102055', barcode='102055', name='BAKPAO AYAM 4S', carton='1', "inner"='1', uom_id='1', 
+		cost='1800', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-20 18:48:38.980697+07', updated_date=NULL,bom_status='false' WHERE id='6181';
+UPDATE item SET sku='102080', barcode='102080', name='BAKPAO AYAM 4S', carton='1', "inner"='1', uom_id='1', 
+		cost='7200', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-21 17:30:23.881095+07', updated_date=NULL,bom_status='false' WHERE id='6256';
+UPDATE item SET sku='102057', barcode='102057', name='BAKPAO COKELAT PCS', carton='1', "inner"='1', uom_id='1', 
+		cost='1500', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-20 18:51:31.798705+07', updated_date=NULL,bom_status='false' WHERE id='6184';
+UPDATE item SET sku='102055', barcode='102055', name='BAKPAO AYAM PCS', carton='1', "inner"='1', uom_id='1', 
+		cost='1800', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-20 18:48:38.980697+07', updated_date=NULL,bom_status='false' WHERE id='6181';
+UPDATE item SET sku='102081', barcode='102081', name='BAKPAO COKELAT 4S', carton='1', "inner"='1', uom_id='1', 
+		cost='6000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-21 17:31:23.917651+07', updated_date=NULL,bom_status='false' WHERE id='6257';
+UPDATE item SET sku='102059', barcode='102059', name='BAKPAO KACANG MERAH PCS', carton='1', "inner"='1', uom_id='1', 
+		cost='1500', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-20 18:55:11.019288+07', updated_date=NULL,bom_status='false' WHERE id='6187';
+UPDATE item SET sku='102082', barcode='102082', name='BAKPAO KACANG MERAH 4S', carton='1', "inner"='1', uom_id='1', 
+		cost='6000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-21 17:32:27.851506+07', updated_date=NULL,bom_status='false' WHERE id='6258';
+UPDATE item SET sku='102083', barcode='102083', name='RWM AS KEJU PARMESAN BUBUK', carton='1', "inner"='1', uom_id='1', 
+		cost='29000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='240',type='2', taxed='false', consignment='false', 
+		created_date='2016-04-25 16:21:31.085448+07', updated_date=NULL,bom_status='false' WHERE id='6269';
+UPDATE item SET sku='102081', barcode='102081', name='BAKPAO COKELAT 4S', carton='1', "inner"='1', uom_id='1', 
+		cost='6000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-21 17:31:23.917651+07', updated_date=NULL,bom_status='false' WHERE id='6257';
+UPDATE item SET sku='102082', barcode='102082', name='BAKPAO KACANG MERAH 4S', carton='1', "inner"='1', uom_id='1', 
+		cost='6000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2016-04-21 17:32:27.851506+07', updated_date=NULL,bom_status='false' WHERE id='6258';
+UPDATE item SET sku='202121', barcode='202121', name='JOYKO BINDER CLIP 105', carton='1', "inner"='1', uom_id='1', 
+		cost='1900', trading_price='2700', category1='3',  category2='17', 
+		category3='228',category4='236',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='2833';
+UPDATE item SET sku='2015621', barcode='15151526', name='KIYORA GREEN TEA 330ML (DELETE)', carton='24', "inner"='1', uom_id='1', 
+		cost='2652', trading_price='0', category1='4',  category2='7', 
+		category3='32',category4='264',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='2366';
+INSERT INTO vendor(id, code, name, contact_name, discount, discount_promotion, address, 
+		description, term_of_payment, pkp, npwp, contact_number, phone_number)
+		VALUES ('390', 'K025', 'KOPERASI NASIONAL PERTAMINA BERSATU 139', 'IBRAHIM AJIE', '0', '0', 'JL.PERWIRA NO 2-4 GAMBIR JAKARTA PUSAT 10110', 
+		'-', '14', 'false', '01.336.335.3-038.000', '08119916226', '08119916226');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7482','204532','8995952019014','MORIN SRIKAYA PANDAN JAR 330GR','24','1','1',
+			'16875','26500','0','4','8','48',
+			'198','1','true','false','2016-06-17 10:47:48.989374+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7483','204533','8995952002016','MORIN PINEAPPLE JAM JAR 330GR','24','1','1',
+			'19916.67','31500','0','4','8','48',
+			'198','1','true','false','2016-06-17 10:48:49.56799+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7484','204534','8995952003013','MORIN STRAWBERRY JAM JAR 330GR','24','1','1',
+			'21500','34000','0','4','8','48',
+			'198','1','true','false','2016-06-17 10:50:00.908185+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7485','204535','8995952064014','MORIN BLUEBERRY JAM JAR 330GR','24','1','1',
+			'28458.34','45000','0','4','8','48',
+			'198','1','true','false','2016-06-17 10:51:01.581876+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7486','204536','8995952008018','MORIN CHOCO PEANUT TWIN 300GR','24','1','1',
+			'27791.67','44000','0','4','8','48',
+			'198','1','true','false','2016-06-17 10:51:47.788289+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7487','204537','8995952015221','MORIN KAYA PANDAN JAR 170GR','24','1','1',
+			'10833.33','17500','0','4','8','48',
+			'198','1','true','false','2016-06-17 10:55:15.002071+07',NULL,'false');
+UPDATE item SET sku='204537', barcode='8995952015221', name='MORIN KAYA PANDAN JAR 170GR', carton='12', "inner"='1', uom_id='1', 
+		cost='10833.33', trading_price='0', category1='4',  category2='8', 
+		category3='48',category4='198',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-17 10:55:15.002071+07', updated_date=NULL,bom_status='false' WHERE id='7487';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7488','204538','8995952002221','MORIN PINEAPPLE JAM JAR 170GR','12','1','1',
+			'11833.33','19000','0','4','8','48',
+			'198','1','true','false','2016-06-17 10:56:28.112887+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7489','204539','8995952003228','MORIN STRAWBERRY JAM JAR 170GR','12','1','1',
+			'12166.67','19500','0','4','8','48',
+			'198','1','true','false','2016-06-17 10:57:24.819669+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7490','204540','8995952064229','MORIN BLUEBERRY JAM JAR 170GR','12','1','1',
+			'16083.33','25000','0','4','8','48',
+			'198','1','true','false','2016-06-17 10:58:22.992514+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7491','204541','8995952008230','MORIN CHOCO PEANUT TWIN 150GR','12','1','1',
+			'15333.33','24500','0','4','8','48',
+			'198','1','true','false','2016-06-17 10:59:18.202541+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7492','204542','8995952101016','MATOA KAYA PANDAN 340GR','12','1','1',
+			'25000','40000','0','4','8','48',
+			'198','1','true','false','2016-06-17 11:00:58.520871+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7493','204543','8995952102013','MATOA PINEAPPLE JAM 340GR','12','1','1',
+			'29166.67','46000','0','4','8','48',
+			'198','1','true','false','2016-06-17 11:01:44.317383+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7494','204544','8995952103010','MATOA STRAWBERRY JAM 340GR','12','1','1',
+			'29166.67','46000','0','4','8','48',
+			'198','1','true','false','2016-06-17 11:02:41.355712+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7495','204545','8997004911338','EVYNA MUSHROOM CRISPY ROASTBEEF 140GR','24','1','1',
+			'18000','26500','0','4','8','30',
+			'271','1','true','false','2016-06-17 11:03:39.984545+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7496','204546','204546','EVYNA MUSHROOM CRIPSY SAMBALADO 140GR','24','1','1',
+			'18000','26500','0','4','8','30',
+			'271','1','true','false','2016-06-17 11:04:26.614841+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7497','204547','204547','EVYNA MUSHROOM CRISPY PIZZA 140GR','24','1','1',
+			'18000','26500','0','4','8','30',
+			'271','1','true','false','2016-06-17 11:05:41.330259+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7498','204548','204548','EVYNA MUSHROOM CRISPY KEJU 140GR','24','1','1',
+			'18000','26500','0','4','8','30',
+			'271','1','true','false','2016-06-17 11:06:31.395622+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7499','204549','204549','EVYNA MUSHROOM CRIPSY ABON 140GR','24','1','1',
+			'18000','26500','0','4','8','30',
+			'271','1','true','false','2016-06-17 11:07:41.099901+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7500','300211','300211','LPG BRIGHT GAS CAN 220GR','6','1','1',
+			'16500','22000','0','3','14','77',
+			'168','1','true','false','2016-06-17 11:09:19.292287+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7501','300212','300212','LPG BRIGHT GAS 5.5KG','1','1','1',
+			'65000','72500','0','3','14','77',
+			'168','1','true','false','2016-06-17 11:10:22.205336+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7502','300213','300213','LPG BRIGHT GAS 5.5KG + TABUNG','1','1','1',
+			'350000','389000','0','3','14','77',
+			'168','1','true','false','2016-06-17 11:12:24.489815+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7503','300214','300214','LPG BRIGHT GAS 12KG','1','1','1',
+			'138000','147500','0','3','14','77',
+			'168','1','true','false','2016-06-17 11:13:09.035141+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7504','300215','300215','LPG GAS 50KG','1','1','1',
+			'650000','675000','0','3','14','77',
+			'168','1','true','false','2016-06-17 11:14:09.325741+07',NULL,'false');
+UPDATE item SET sku='300211', barcode='8994983000015', name='LPG BRIGHT GAS CAN 220GR', carton='6', "inner"='1', uom_id='1', 
+		cost='16500', trading_price='0', category1='3',  category2='14', 
+		category3='77',category4='168',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-17 11:09:19.292287+07', updated_date=NULL,bom_status='false' WHERE id='7500';
+UPDATE item SET sku='300208', barcode='8994983000015', name='LPG BRIGHT GAS CAN 220GR (DELETE)', carton='6', "inner"='1', uom_id='1', 
+		cost='16500', trading_price='0', category1='3',  category2='14', 
+		category3='77',category4='168',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-15 11:45:41.30098+07', updated_date=NULL,bom_status='false' WHERE id='7472';
+UPDATE item SET sku='300209', barcode='300209', name='LPG BRIGHT GAS 5.5KG (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='65000', trading_price='0', category1='3',  category2='14', 
+		category3='77',category4='168',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-15 12:12:37.946862+07', updated_date=NULL,bom_status='false' WHERE id='7473';
+UPDATE item SET sku='300210', barcode='300210', name='LPG BRIGHT GAS 5.5KG + TABUNG (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='350000', trading_price='0', category1='3',  category2='14', 
+		category3='77',category4='168',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-15 12:14:17.040952+07', updated_date=NULL,bom_status='false' WHERE id='7474';
+UPDATE item SET sku='203387', barcode='203387', name='SUPERPELL BLUE REFILL 800ML', carton='1', "inner"='1', uom_id='1', 
+		cost='9300', trading_price='10500', category1='4',  category2='12', 
+		category3='54',category4='162',type='1', taxed='false', consignment='false', 
+		created_date='2016-03-29 16:31:59.746935+07', updated_date=NULL,bom_status='false' WHERE id='5730';
+UPDATE item SET sku='202590', barcode='202590', name='STELLA ALL IN ONE ORANGE ', carton='18', "inner"='1', uom_id='1', 
+		cost='7869.1', trading_price='11500', category1='4',  category2='12', 
+		category3='33',category4='272',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3896';
+UPDATE item SET sku='203699', barcode='203699', name='NICE TOILET CORE EMBOSS 10S', carton='10', "inner"='1', uom_id='1', 
+		cost='20045.46', trading_price='32300', category1='4',  category2='12', 
+		category3='67',category4='265',type='1', taxed='true', consignment='false', 
+		created_date='2016-04-25 13:24:14.93237+07', updated_date=NULL,bom_status='false' WHERE id='6263';
+UPDATE item SET sku='202452', barcode='202452', name='POST IT PRONTO 7.5CM', carton='1', "inner"='1', uom_id='1', 
+		cost='5500', trading_price='7500', category1='3',  category2='17', 
+		category3='76',category4='99',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3516';
+UPDATE item SET sku='101775', barcode='101775', name='KRB POK CHOY KG', carton='1', "inner"='1', uom_id='2', 
+		cost='12000', trading_price='13000', category1='2',  category2='11', 
+		category3='78',category4='211',type='3', taxed='false', consignment='false', 
+		created_date='2016-03-15 13:57:29.042936+07', updated_date=NULL,bom_status='false' WHERE id='5551';
+INSERT INTO vendor(id, code, name, contact_name, discount, discount_promotion, address, 
+		description, term_of_payment, pkp, npwp, contact_number, phone_number)
+		VALUES ('391', 'K026', 'KASIH KURNIA, CV', 'MELISSA', '0', '0', 'GALAXI BUMI PERMAI E2 NO. 19
+RT 001 RW 009
+KEL KEPUTIH
+KEC SUKOLILO
+SURABAYA - JAWA TIMUR', 
+		'-', '30', 'true', '715865275606000', '0811328477', '0811328477');
+UPDATE vendor
+   		SET code='K026', name='KASIH KURNIA, CV(DELETE)', contact_name='MELISSA', discount='0', discount_promotion='0', 
+		address='GALAXI BUMI PERMAI E2 NO. 19
+RT 001 RW 009
+KEL KEPUTIH
+KEC SUKOLILO
+SURABAYA - JAWA TIMUR', description='-', term_of_payment='30', pkp='true', npwp='715865275606000', contact_number='0811328477', 
+		phone_number='0811328477'
+ 		WHERE id='391';
+UPDATE item SET sku='204512', barcode='8991771200381', name='VITACIMIN FRUIT PUNCH STRIP 2S', carton='100', "inner"='1', uom_id='1', 
+		cost='1122', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-14 15:42:10.774669+07', updated_date=NULL,bom_status='false' WHERE id='7458';
+UPDATE item SET sku='204511', barcode='8991771200398', name='VITACIMIN ORANGE STRIP 2S', carton='100', "inner"='1', uom_id='1', 
+		cost='1122', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-14 15:40:48.330121+07', updated_date=NULL,bom_status='false' WHERE id='7457';
+UPDATE item SET sku='204510', barcode='8991771200374', name='VITACIMIN BLUEBERRY STRIP 2S', carton='100', "inner"='1', uom_id='1', 
+		cost='1122', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-14 15:40:00.798328+07', updated_date=NULL,bom_status='false' WHERE id='7456';
+UPDATE item SET sku='200970', barcode='8991771200329', name='VITACIMIN ORIGINAL STRIP 2S', carton='100', "inner"='1', uom_id='1', 
+		cost='1122', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='1029';
+UPDATE item SET sku='204513', barcode='8991771100926', name='NEVRAMIN PACK 10S', carton='15', "inner"='1', uom_id='1', 
+		cost='9091', trading_price='0', category1='4',  category2='10', 
+		category3='47',category4='275',type='1', taxed='true', consignment='false', 
+		created_date='2016-06-14 15:43:02.079143+07', updated_date=NULL,bom_status='false' WHERE id='7459';
+UPDATE item SET sku='202521', barcode='8998989400176', name='GG SHIVER', carton='1', "inner"='1', uom_id='1', 
+		cost='12600', trading_price='0', category1='4',  category2='8', 
+		category3='37',category4='124',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3634';
+UPDATE item SET sku='202580', barcode='8999909010567', name='DJI SAM SOE KRETEK 16S', carton='1', "inner"='1', uom_id='1', 
+		cost='15921', trading_price='0', category1='4',  category2='8', 
+		category3='37',category4='124',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3876';
+UPDATE item SET sku='202954', barcode='8995201801193', name='COUNTERPAIN PATCH HOT', carton='1', "inner"='5', uom_id='4', 
+		cost='18500', trading_price='0', category1='4',  category2='10', 
+		category3='38',category4='217',type='1', taxed='true', consignment='false', 
+		created_date='2016-01-13 14:53:41.03324+07', updated_date=NULL,bom_status='false' WHERE id='4701';
+UPDATE item SET sku='204047', barcode='8996129800633', name='CLEO 550 ML', carton='24', "inner"='1', uom_id='1', 
+		cost='1818.18', trading_price='0', category1='4',  category2='7', 
+		category3='34',category4='279',type='1', taxed='true', consignment='false', 
+		created_date='2016-05-02 19:27:21.156142+07', updated_date=NULL,bom_status='false' WHERE id='6853';
+UPDATE item SET sku='203437', barcode='8992388133529', name='NU OCEANA SALT LEMONADE 460ML', carton='24', "inner"='1', uom_id='1', 
+		cost='5606', trading_price='0', category1='4',  category2='7', 
+		category3='32',category4='175',type='1', taxed='true', consignment='false', 
+		created_date='2016-04-07 15:45:51.153503+07', updated_date=NULL,bom_status='false' WHERE id='5832';
+UPDATE item SET sku='204051', barcode='89990368990599', name='TOTAL 8+ 300 ML', carton='12', "inner"='1', uom_id='1', 
+		cost='2500', trading_price='0', category1='4',  category2='7', 
+		category3='34',category4='279',type='1', taxed='true', consignment='false', 
+		created_date='2016-05-02 19:27:21.156142+07', updated_date=NULL,bom_status='false' WHERE id='6857';
+UPDATE item SET sku='203235', barcode='8990368990599', name='BAGUS TOOTHBRUSH MAXI PCS', carton='1', "inner"='24', uom_id='1', 
+		cost='2708.34', trading_price='0', category1='4',  category2='12', 
+		category3='50',category4='266',type='1', taxed='true', consignment='false', 
+		created_date='2016-03-02 15:57:14.893226+07', updated_date=NULL,bom_status='false' WHERE id='5420';
+UPDATE item SET sku='202714', barcode='8885012970051', name='BATHMOCKTAIL SHOWER GEL HAWAIAN SUNSET 500ML', carton='12', "inner"='1', uom_id='1', 
+		cost='28364', trading_price='0', category1='4',  category2='12', 
+		category3='92',category4='106',type='1', taxed='true', consignment='false', 
+		created_date='2015-11-20 13:24:33.080018+07', updated_date=NULL,bom_status='false' WHERE id='4129';
+UPDATE item SET sku='202712', barcode='8885012970044', name='BATHMOCKTAIL SHOWER GEL MINT COOLER 500ML', carton='12', "inner"='1', uom_id='1', 
+		cost='28364', trading_price='0', category1='4',  category2='16', 
+		category3='92',category4='106',type='1', taxed='true', consignment='false', 
+		created_date='2015-11-20 13:18:02.23136+07', updated_date=NULL,bom_status='false' WHERE id='4127';
+UPDATE item SET sku='202735', barcode='071409543108', name='MANE N TAIL HERBAL GROW CONDITIONER 355ML', carton='6', "inner"='1', uom_id='1', 
+		cost='110000', trading_price='0', category1='4',  category2='16', 
+		category3='61',category4='248',type='1', taxed='true', consignment='false', 
+		created_date='2015-11-25 17:16:12.509484+07', updated_date=NULL,bom_status='false' WHERE id='4174';
+UPDATE item SET sku='201445', barcode='8993053141198', name='PASEO CMP DUCK CLASSIC', carton='24', "inner"='1', uom_id='1', 
+		cost='9250', trading_price='0', category1='4',  category2='12', 
+		category3='67',category4='159',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='2088';
+UPDATE item SET sku='202511', barcode='4800060331009', name='KOTEX FRESHLINERS REG SCENTED', carton='24', "inner"='1', uom_id='1', 
+		cost='4460.13', trading_price='0', category1='4',  category2='12', 
+		category3='46',category4='244',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3605';
+UPDATE item SET sku='202510', barcode='480060331009', name='KOTEX FRESHLINERS REG UNSCENTED', carton='24', "inner"='1', uom_id='1', 
+		cost='4460.13', trading_price='0', category1='4',  category2='12', 
+		category3='46',category4='244',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3604';
+UPDATE item SET sku='204252', barcode='8997010110046', name='SOYLICIOUS SOY MILK CAPPUCINO 1000ML', carton='12', "inner"='1', uom_id='1', 
+		cost='20900', trading_price='0', category1='4',  category2='7', 
+		category3='128',category4='284',type='1', taxed='true', consignment='false', 
+		created_date='2016-05-10 03:06:49.577851+07', updated_date=NULL,bom_status='false' WHERE id='7095';
+UPDATE item SET sku='203331', barcode='089686054523', name='INDOMIE MY NOODLEZ PIZZA CHEESE', carton='20', "inner"='1', uom_id='1', 
+		cost='3130', trading_price='0', category1='4',  category2='8', 
+		category3='65',category4='195',type='1', taxed='true', consignment='false', 
+		created_date='2016-03-21 16:04:49.040924+07', updated_date=NULL,bom_status='false' WHERE id='5644';
+UPDATE item SET sku='200347', barcode='089686010015', name='INDOMIE AYAM BAWANG 69GR', carton='40', "inner"='1', uom_id='1', 
+		cost='1672.15', trading_price='0', category1='4',  category2='8', 
+		category3='65',category4='195',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='416';
+UPDATE item SET sku='203329', barcode='089686043334', name='INDOMIE GORENG AYAM BAWANG', carton='40', "inner"='1', uom_id='1', 
+		cost='1793.64', trading_price='0', category1='4',  category2='8', 
+		category3='65',category4='195',type='1', taxed='true', consignment='false', 
+		created_date='2016-03-21 16:07:01.194709+07', updated_date=NULL,bom_status='false' WHERE id='5646';
+UPDATE item SET sku='203330', barcode='089686043358', name='INDOMIE GORENG SOTO', carton='40', "inner"='1', uom_id='1', 
+		cost='1793.64', trading_price='0', category1='4',  category2='8', 
+		category3='65',category4='195',type='1', taxed='true', consignment='false', 
+		created_date='2016-03-21 16:06:02.39909+07', updated_date=NULL,bom_status='false' WHERE id='5645';
+UPDATE item SET sku='203241', barcode='8997009780397', name='LOVE JUICE POMEGRANATE 300ML', carton='1', "inner"='1', uom_id='1', 
+		cost='4840', trading_price='0', category1='4',  category2='7', 
+		category3='27',category4='167',type='1', taxed='true', consignment='false', 
+		created_date='2016-03-08 16:19:51.110904+07', updated_date=NULL,bom_status='false' WHERE id='5440';
+UPDATE item SET sku='204249', barcode='8997010110114', name='SOYLICIOUS SOY MILK UNSWEETENED 330ML', carton='24', "inner"='1', uom_id='1', 
+		cost='9100', trading_price='0', category1='4',  category2='7', 
+		category3='128',category4='284',type='1', taxed='true', consignment='false', 
+		created_date='2016-05-10 03:06:49.577851+07', updated_date=NULL,bom_status='false' WHERE id='7092';
+UPDATE item SET sku='204250', barcode='8997010110039', name='SOYLICIOUS SOY MILK CAPPUCINO 330ML', carton='24', "inner"='1', uom_id='1', 
+		cost='9100', trading_price='0', category1='4',  category2='7', 
+		category3='128',category4='284',type='1', taxed='true', consignment='false', 
+		created_date='2016-05-10 03:06:49.577851+07', updated_date=NULL,bom_status='false' WHERE id='7093';
+UPDATE item SET sku='200479', barcode='089686596250', name='LAYS CLASSIC SALTY 68GR', carton='30', "inner"='1', uom_id='1', 
+		cost='7331', trading_price='0', category1='4',  category2='8', 
+		category3='30',category4='222',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='548';
+UPDATE item SET sku='203492', barcode='8888166991125', name='MONDE  BUTTER COOKIES 150 GR', carton='20', "inner"='1', uom_id='1', 
+		cost='9455', trading_price='0', category1='4',  category2='8', 
+		category3='41',category4='97',type='1', taxed='true', consignment='false', 
+		created_date='2016-04-15 15:28:59.320238+07', updated_date=NULL,bom_status='false' WHERE id='6023';
+UPDATE item SET sku='200152', barcode='089686591231', name='CHIKI BALL CHOCOLATE 12GR', carton='60', "inner"='1', uom_id='1', 
+		cost='805.45', trading_price='0', category1='4',  category2='8', 
+		category3='30',category4='222',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='162';
+UPDATE item SET sku='203363', barcode='089686598315', name='CHITATO ORIGINAL SALT 15GR', carton='1', "inner"='1', uom_id='1', 
+		cost='1527.28', trading_price='0', category1='4',  category2='8', 
+		category3='30',category4='222',type='1', taxed='true', consignment='false', 
+		created_date='2016-03-24 15:20:45.582478+07', updated_date=NULL,bom_status='false' WHERE id='5681';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7505','204550','204550','BELIBIS SAMBAL 340ML','1','1','1',
+			'17100','17900','0','4','8','28',
+			'246','1','true','false','2016-06-17 16:40:28.68045+07',NULL,'false');
+UPDATE item SET sku='101524', barcode='101524', name='CN MAUSSEE MILKY SOYA PUDING BUBBLEGUM (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='8700', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:06:24.4163+07', updated_date=NULL,bom_status='false' WHERE id='4591';
+UPDATE item SET sku='101523', barcode='101523', name='CN MAUSSEE MILKY SOYA PUDING GREEN TEA (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='8700', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:05:14.163048+07', updated_date=NULL,bom_status='false' WHERE id='4590';
+UPDATE item SET sku='101522', barcode='101522', name='CN MAUSSEE MILKY SOYA PUDING LYCHEE (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='8700', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:04:10.685706+07', updated_date=NULL,bom_status='false' WHERE id='4589';
+UPDATE item SET sku='101521', barcode='101521', name='CN MAUSSEE MILKY SOYA PUDING ORANGE (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='8700', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:02:11.583839+07', updated_date=NULL,bom_status='false' WHERE id='4588';
+UPDATE item SET sku='101520', barcode='101520', name='CN MAUSSEE MILKY SOYA PUDING COKLAT (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='8700', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:00:25.851609+07', updated_date=NULL,bom_status='false' WHERE id='4587';
+UPDATE item SET sku='101518', barcode='101518', name='CN MAUSSEE MILKY SOYA PUDING TARO (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='8700', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 10:44:06.128014+07', updated_date=NULL,bom_status='false' WHERE id='4584';
+UPDATE item SET sku='101517', barcode='101517', name='CN MAUSSEE MILKY SOYA PUDING MANGGA (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='8700', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 10:42:03.393493+07', updated_date=NULL,bom_status='false' WHERE id='4583';
+UPDATE item SET sku='101532', barcode='101532', name='CN MAUSSEE SILKY PUDING BUBBLEGUM (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='7000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:19:27.598709+07', updated_date=NULL,bom_status='false' WHERE id='4599';
+UPDATE item SET sku='101531', barcode='101531', name='CN MAUSSEE SILKY PUDING GREEN TEA (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='7000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:18:31.667683+07', updated_date=NULL,bom_status='false' WHERE id='4598';
+UPDATE item SET sku='101530', barcode='101530', name='CN MAUSSEE SILKY PUDING ORANGE (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='7000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:15:46.629155+07', updated_date=NULL,bom_status='false' WHERE id='4597';
+UPDATE item SET sku='101529', barcode='101529', name='CN MAUSSEE SILKY PUDING LYCHEE (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='7000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:14:52.694068+07', updated_date=NULL,bom_status='false' WHERE id='4596';
+UPDATE item SET sku='101528', barcode='101528', name='CN MAUSSEE SILKY PUDING COKLAT (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='7000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:11:17.691084+07', updated_date=NULL,bom_status='false' WHERE id='4595';
+UPDATE item SET sku='101527', barcode='101527', name='CN MAUSSEE SILKY PUDING BLUEBERRY (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='7000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:10:22.799232+07', updated_date=NULL,bom_status='false' WHERE id='4594';
+UPDATE item SET sku='101526', barcode='101526', name='CN MAUSSEE SILKY PUDING TARO (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='7000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:08:50.595994+07', updated_date=NULL,bom_status='false' WHERE id='4593';
+UPDATE item SET sku='101525', barcode='101525', name='CN MAUSSEE SILKY PUDING MANGGA (DELETE)', carton='1', "inner"='1', uom_id='1', 
+		cost='7000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='132',type='1', taxed='false', consignment='true', 
+		created_date='2016-01-04 11:07:48.887802+07', updated_date=NULL,bom_status='false' WHERE id='4592';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7506','204551','204551','BELIBIS SAUS TOMAT 340ML','1','1','1',
+			'9800','9900','0','4','8','28',
+			'246','1','false','false','2016-06-17 16:58:31.881643+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7507','204552','204552','INDOFOOD SAMBAL BANGKOK 340ML','1','1','1',
+			'12700','14000','0','4','8','28',
+			'246','1','true','false','2016-06-17 17:07:07.116534+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7508','204553','204553','INDOFOOD SAMBAL PEDAS 340ML','1','1','1',
+			'11350','12500','0','4','8','28',
+			'246','1','true','false','2016-06-17 17:08:58.221811+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7509','204554','204554','NESTLE HONEY STAR 300GR','1','1','1',
+			'34300','38000','0','4','8','48',
+			'119','1','true','false','2016-06-17 17:32:53.000562+07',NULL,'false');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7510','204555','204555','GULAKU KUNING 1 KG','1','1','1',
+			'16900','18000','0','4','8','56',
+			'260','1','false','false','2016-06-17 17:48:20.511619+07',NULL,'false');
+INSERT INTO vendor(id, code, name, contact_name, discount, discount_promotion, address, 
+		description, term_of_payment, pkp, npwp, contact_number, phone_number)
+		VALUES ('392', 'P029', 'PARAMOUNT PROPERTINDO PT.', 'NATALINDA', '0', '0', 'FAME HOTEL-JL BOULEVARD GADING SERPONG', 
+		'-', '30', 'false', '00.00.000', '021', '021-29303333');
+UPDATE item SET sku='101087', barcode='101087', name='RWM AS SODA KUE', carton='1', "inner"='1', uom_id='1', 
+		cost='5500', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='134',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3502';
+UPDATE item SET sku='300193', barcode='300193', name='RIBBON ERC 27 FULMARK', carton='1', "inner"='1', uom_id='1', 
+		cost='25500', trading_price='35500', category1='3',  category2='17', 
+		category3='76',category4='228',type='3', taxed='true', consignment='false', 
+		created_date='2016-06-07 11:28:26.627778+07', updated_date=NULL,bom_status='false' WHERE id='7398';
+UPDATE item SET sku='101469', barcode='101469', name='RWM AS MAGGI SEASONING 200ML', carton='1', "inner"='1', uom_id='1', 
+		cost='29000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='240',type='2', taxed='false', consignment='false', 
+		created_date='2015-12-15 18:23:12.101556+07', updated_date=NULL,bom_status='false' WHERE id='4407';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7512','102234','102234','RWM AS COLLATTA COKELAT PWDR','1','1','2',
+			'150000','150000','0','2','15','57',
+			'240','2','false','false','2016-06-20 12:17:34.825497+07',NULL,'false');
+UPDATE item SET sku='100760', barcode='100760', name='RWM AS KOLANG KALING', carton='1', "inner"='1', uom_id='1', 
+		cost='18000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='2969';
+UPDATE item SET sku='100787', barcode='1784', name='RWM AS BLEWAH', carton='1', "inner"='1', uom_id='1', 
+		cost='8000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3011';
+UPDATE item SET sku='100729', barcode='100729', name='RWM AS NATA DE COCO', carton='1', "inner"='1', uom_id='1', 
+		cost='15000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='2869';
+UPDATE item SET sku='100782', barcode='100782', name='RWM AS JELLY KELAPA', carton='1', "inner"='1', uom_id='1', 
+		cost='6500', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3003';
+UPDATE item SET sku='100812', barcode='100812', name='RWM AS MUMU JELLY', carton='1', "inner"='1', uom_id='1', 
+		cost='12000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3052';
+UPDATE item SET sku='100812', barcode='100812', name='RWM AS MUMU JELLY', carton='1', "inner"='1', uom_id='1', 
+		cost='12000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3052';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7513','102235','102235','RWM AS JELLY NANGKA','1','1','2',
+			'9000','9000','0','2','15','57',
+			'240','2','false','false','2016-06-20 15:10:15.528396+07',NULL,'false');
+UPDATE item SET sku='100781', barcode='100781', name='RWM AS SELASIH KERING 50GR', carton='1', "inner"='1', uom_id='1', 
+		cost='11000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3002';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7514','102236','102236','RWM AS TAPE KETAN HITAM','1','1','1',
+			'6000','6000','0','2','15','57',
+			'240','2','false','false','2016-06-20 15:16:19.22778+07',NULL,'false');
+UPDATE item SET sku='100735', barcode='100735', name='RWM AS UBI JALAR MERAH', carton='1', "inner"='1', uom_id='1', 
+		cost='10000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='2875';
+UPDATE item SET sku='100736', barcode='100736', name='RWM AS PISANG TANDUK', carton='1', "inner"='1', uom_id='1', 
+		cost='7000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='2876';
+UPDATE item SET sku='100784', barcode='100784', name='RWM AS ANGGUR ', carton='1', "inner"='1', uom_id='1', 
+		cost='62000', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3005';
+INSERT INTO vendor(id, code, name, contact_name, discount, discount_promotion, address, 
+		description, term_of_payment, pkp, npwp, contact_number, phone_number)
+		VALUES ('393', 'R010', 'R2 ENTERPRISE', 'MISBAH TULHAIR', '0', '0', 'JL. BUNTU NO.33 LARANGAN INDAH RT.002/09
+KEL. LARANGAN INDAH
+KEC. LARANGAN', 
+		'-', '7', 'false', '35.817.684.0-416.000', '08111180205', '0217319677');
+UPDATE item SET sku='202254', barcode='8992858688313', name='WOODS LOZENGES LICORICE', carton='270', "inner"='30', uom_id='1', 
+		cost='4320', trading_price='0', category1='4',  category2='10', 
+		category3='39',category4='137',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3073';
+UPDATE item SET sku='202255', barcode='8992858687910', name='WOODS LOZENGES SUGAR FREE ORI ', carton='270', "inner"='30', uom_id='1', 
+		cost='4320', trading_price='0', category1='4',  category2='10', 
+		category3='39',category4='137',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3074';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7515','102237','102237','RWM AS TAHU COKLAT KCL','1','1','1',
+			'450','450','0','2','15','57',
+			'240','2','false','false','2016-06-20 16:30:30.803076+07',NULL,'false');
+UPDATE item SET sku='100802', barcode='100802', name='RWM AS DAUN PANDAN', carton='1', "inner"='1', uom_id='1', 
+		cost='2500', trading_price='0', category1='2',  category2='15', 
+		category3='57',category4='183',type='1', taxed='false', consignment='false', 
+		created_date='2015-11-04 08:15:16.377657+07', updated_date=NULL,bom_status='false' WHERE id='3030';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7516','102238','102238','RWM AS PEWARNA UNGU','1','1','1',
+			'5500','5500','0','2','15','57',
+			'240','2','false','false','2016-06-20 16:47:17.418548+07',NULL,'false');
+UPDATE item SET sku='202833', barcode='202833', name='KNORR POWDER CHICKEN SEASONING NAM ID 1KG ', carton='6', "inner"='1', uom_id='1', 
+		cost='107557.17', trading_price='124000', category1='4',  category2='8', 
+		category3='28',category4='134',type='1', taxed='true', consignment='false', 
+		created_date='2015-12-11 15:26:48.815541+07', updated_date=NULL,bom_status='false' WHERE id='4355';
+UPDATE item SET sku='202837', barcode='202837', name='KNORR CHICKEN POWDER REFILL ID DW 1KG ', carton='6', "inner"='1', uom_id='1', 
+		cost='61229.5', trading_price='74900', category1='4',  category2='8', 
+		category3='28',category4='134',type='1', taxed='true', consignment='false', 
+		created_date='2015-12-11 15:53:39.50687+07', updated_date=NULL,bom_status='false' WHERE id='4359';
+UPDATE item SET sku='202853', barcode='202853', name='KNORR MASHED POTATO MIX 2KG ', carton='1', "inner"='1', uom_id='1', 
+		cost='138155', trading_price='157000', category1='4',  category2='8', 
+		category3='28',category4='134',type='1', taxed='true', consignment='false', 
+		created_date='2015-12-11 17:17:30.699639+07', updated_date=NULL,bom_status='false' WHERE id='4375';
+UPDATE item SET sku='202863', barcode='202863', name='BLUE BAND MINYAK SAMIN-LOLA 2KG ', carton='6', "inner"='1', uom_id='1', 
+		cost='71513', trading_price='82000', category1='4',  category2='8', 
+		category3='28',category4='215',type='1', taxed='true', consignment='false', 
+		created_date='2015-12-14 09:48:22.994137+07', updated_date=NULL,bom_status='false' WHERE id='4384';
+UPDATE item SET sku='202853', barcode='202853', name='KNORR MASHED POTATO MIX 2KG ', carton='1', "inner"='1', uom_id='1', 
+		cost='138155', trading_price='157000', category1='4',  category2='8', 
+		category3='28',category4='134',type='1', taxed='true', consignment='false', 
+		created_date='2015-12-11 17:17:30.699639+07', updated_date=NULL,bom_status='false' WHERE id='4375';
+UPDATE item SET sku='202853', barcode='202853', name='KNORR MASHED POTATO MIX 2KG ', carton='1', "inner"='1', uom_id='1', 
+		cost='138155', trading_price='157000', category1='4',  category2='8', 
+		category3='28',category4='134',type='1', taxed='true', consignment='false', 
+		created_date='2015-12-11 17:17:30.699639+07', updated_date=NULL,bom_status='false' WHERE id='4375';
+UPDATE item SET sku='202863', barcode='202863', name='BLUE BAND MINYAK SAMIN-LOLA 2KG ', carton='6', "inner"='1', uom_id='1', 
+		cost='71513', trading_price='82000', category1='4',  category2='8', 
+		category3='28',category4='215',type='1', taxed='true', consignment='false', 
+		created_date='2015-12-14 09:48:22.994137+07', updated_date=NULL,bom_status='false' WHERE id='4384';
+UPDATE item SET sku='202853', barcode='202853', name='KNORR MASHED POTATO MIX 2KG ', carton='1', "inner"='1', uom_id='1', 
+		cost='138155', trading_price='157000', category1='4',  category2='8', 
+		category3='28',category4='134',type='1', taxed='true', consignment='false', 
+		created_date='2015-12-11 17:17:30.699639+07', updated_date=NULL,bom_status='false' WHERE id='4375';
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7517','300216','300216','BINTANG PLASTIK HDPE UK 24 PCS','1','1','1',
+			'83.59','500','500','3','18','77',
+			'226','3','true','false','2016-06-20 17:19:49.255734+07',NULL,'false');
+INSERT INTO vendor(id, code, name, contact_name, discount, discount_promotion, address, 
+		description, term_of_payment, pkp, npwp, contact_number, phone_number)
+		VALUES ('394', 'B011', 'BERNARD HENDRIK', 'EKO', '0', '0', 'KOMPLEK GRIYA PRATAMA RAYA BLOK 7 NO 3 KELAPA GADING JAKARTA UTARA
+JAKARTA - 14250', 
+		'-', '30', 'true', '01.336.335.3-038.000', '08122744744', '08122744744');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7518','900082','900082','CK NASI BAKAR + ICHITAN HONEY LEMON 425 ML','1','1','1',
+			'9646','13000','0','2','15','57',
+			'183','1','false','false','2016-06-21 10:39:33.105009+07',NULL,'true');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7519','900083','900083','CK CHICKEN TERIYAKI + AQUA WATER BTL 330ML','1','1','1',
+			'12489','20000','0','2','15','57',
+			'183','1','false','false','2016-06-21 10:40:17.839941+07',NULL,'true');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7520','900084','900084','SUNPRIDE BANANA + ULTRA MILK CHOCOLATE 250ML','1','1','1',
+			'6935','8500','0','2','15','57',
+			'183','1','false','false','2016-06-21 10:41:09.180293+07',NULL,'true');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7521','900085','900085','CK LASAGNA BEEF + OASIS BOTOL 330ML','1','1','1',
+			'7695.46','10000','0','2','15','57',
+			'183','1','false','false','2016-06-21 10:41:53.217006+07',NULL,'true');
+INSERT INTO item(
+			id, sku, barcode, name, carton, "inner", uom_id, cost, retail_price, 
+			trading_price, category1, category2, category3, category4, type, 
+			taxed, consignment, created_date, updated_date, bom_status)
+		VALUES ('7522','900086','900086','CK BUBUR AYAM + FLORIDINA 360ML','1','1','1',
+			'8044','11000','0','2','15','57',
+			'183','1','false','false','2016-06-21 10:43:05.046928+07',NULL,'true');
+
+ update settings set value='19188' where key='ID_SYNC_MASTER' ;
+ END TRANSACTION;]]></sql>
+</root>

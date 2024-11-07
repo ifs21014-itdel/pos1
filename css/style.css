@@ -1,0 +1,86 @@
+*{
+    font-size: 11px;
+    font-family: tahoma,arial,verdana,sans-serif;
+}
+body {
+    padding:0px;
+    margin:0;
+}
+
+h2 {
+    font-size:18px;
+    font-weight:bold;
+    margin:0;
+    margin-bottom:15px;
+}
+.demo-info{
+    padding:0 0 12px 0;
+}
+.demo-tip{
+    display:none;
+}
+
+
+input, textarea, select{
+    background: url("text-bg.gif") repeat-x scroll 0 0 #FFFFFF;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 2px;
+    border: 1px solid #95b8e7;
+}
+select option{
+    font-size: 11px;
+    height: 13px;
+}
+
+fieldset{
+    border: 1px solid #85ade9;
+    margin: 1px;
+    padding: 0px;
+}
+
+.table_form{
+    border-collapse: collapse;
+}
+.table_form td{
+    border: 1px solid #e0ecff;
+    padding: 1px;
+    background: #ffffff;
+}
+
+.table_form td strong{
+    padding-left: 5px;
+    color: #0e2d5f;
+}
+
+.icon-filter{
+    background:url('filter.png') no-repeat center center;
+}
+
+.datagrid-row-over td{
+    background: #d3e1f1;
+}
+
+.datagrid-row-over td.datagrid-td-rownumber {
+    background: linear-gradient(to bottom, #f9f9f9 0px, #efefef 100%) repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    font: 11px/13px tahoma,arial,verdana,sans-serif;
+}
+
+.datagrid-row-selected td{
+    background: #ffffcc;
+}
+
+
+.datagrid-row-selected td.datagrid-td-rownumber {
+    background: linear-gradient(to bottom, #f9f9f9 0px, #efefef 100%) repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    font: 11px/13px tahoma,arial,verdana,sans-serif;
+}
+
+.datagrid-row-selected td.datagrid-td-rownumber {
+    background: linear-gradient(to bottom, #f9f9f9 0px, #efefef 100%) repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    font: 11px/13px tahoma,arial,verdana,sans-serif;
+}
+
+.datagrid-row-checked{
+    background:#ffcf9f;
+}

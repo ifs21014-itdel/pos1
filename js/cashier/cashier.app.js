@@ -1,0 +1,1 @@
+angular.module('cashierApp', ['ui.bootstrap', 'ngTable', 'drahak.hotkeys']);

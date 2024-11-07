@@ -1,0 +1,4 @@
+CREATE TABLE gb
+(
+  id bigint NOT NULL
+)
