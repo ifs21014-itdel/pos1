@@ -85,6 +85,8 @@ class Sales extends MY_Controller{
 	function saveOrder(){
 		$order = json_decode($_POST["order"]);
 		$customer = $order -> customer;
+		// echo("dedo");
+		var_dump($customer);
 		$items = $order -> items;
 		$payment = $order -> payment;
 		$this -> load -> model("cashier/Model_sales");
