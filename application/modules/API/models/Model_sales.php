@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Model Sales
+ *
+ * @author Rizal.Gurning
+ */
 class Model_sales extends MY_Model{
 	public $table_name = "sales";
 
