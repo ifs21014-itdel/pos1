@@ -107,6 +107,32 @@ class Model_item extends MY_Model {
         return $this->insert($data);
     }
 
+    function get_item_by_id($id) {
+        $query = "SELECT i.*, 
+                         uom.code AS unit_code, 
+                         c1.name AS category1_name, 
+                         c2.name AS category2_name,
+                         c3.name AS category3_name, 
+                         c4.name AS category4_name,
+                         CASE 
+                             WHEN i.taxed = 't' THEN 'YES' 
+                             ELSE 'NO' 
+                         END AS bkp,
+                         ROUND(CAST(FLOAT8((i.retail_price - i.cost) / 
+                         CASE WHEN i.retail_price = 0 THEN 1 ELSE i.retail_price END) * 100 AS NUMERIC), 2) AS gp
+                  FROM item i
+                  INNER JOIN uom ON i.uom_id = uom.id
+                  INNER JOIN category c1 ON c1.id = i.category1
+                  INNER JOIN category c2 ON c2.id = i.category2
+                  INNER JOIN category c3 ON c3.id = i.category3
+                  INNER JOIN category c4 ON c4.id = i.category4
+                  WHERE i.id = ?"; // Parameterized query untuk mencegah SQL injection
+    
+        $result = $this->db->query($query, array($id))->row(); // Menggunakan parameter array untuk ID
+        return $result;
+    }
+    
+
     function update_item($id, $sku, $name, $barcode, $cost, $category1, $category2, $category3, $category4, $uom_id, $carton, $inner, $retail_price, $bkp, $consignment, $type, $trading_price, $bom_status, $status_sku,$image) {
         $data = array(
             "sku" => $sku,

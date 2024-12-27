@@ -9,20 +9,34 @@ class Model_category extends MY_Model {
 	}
 	
 	function get_data($level) {
-		$query = " select * from category where true";
+		// Ambil data kategori berdasarkan level
+		$query = "SELECT * FROM category WHERE true";
 		if($level != 0){
-			$query .= " and (level=$level)";
+			$query .= " AND level = $level";
 		}
-		$query .= " order by id asc ";
-		$data = json_encode($this->db->query($query)->result());
-		echo $data;
+		$query .= " ORDER BY id ASC";
+		
+		// Jalankan query dan ambil hasilnya
+		$data = $this->db->query($query)->result();
+		
+		// Periksa apakah data ada
+		if (!empty($data)) {
+			// Jika ada data, kirimkan data tersebut dengan status success
+			echo json_encode([
+				'status' => 'success',
+				'data' => $data
+			]);
+		} else {
+			// Jika data tidak ditemukan, kirimkan status success dan data null
+			echo json_encode([
+				'status' => 'success',
+				'data' => null,
+				'message' => 'No categories found'  // Pesan jika kategori tidak ditemukan
+			]);
+		}
+		exit; // Jangan lupa exit setelah echo json_encode
 	}
 	
-	function get_data_by_id($id) {
-	    $query = " select * from category where id = ".$id;
-	    $data = json_encode($this->db->query($query)->result());
-	    echo $data;
-	}
 	
 	function get_categories_with_pagination($page, $rows, $filterByName, $filterByLevel){
 		$queryStruct = array(

@@ -110,6 +110,8 @@ class Item extends MY_Controller {
         if (!empty($_FILES['image']['name'])) {
             // Panggil function untuk meng-handle upload gambar
             $image = $this->upload_image($_FILES['image']);
+            error_log("dedi: " . print_r($image, true));
+
             if (!$image) {
                 $response = [
                     'status' => 'error',
@@ -157,7 +159,7 @@ class Item extends MY_Controller {
         } else {
             $response = [
                 'status' => 'error',
-                'message' => 'Failed to add item'
+                'message' => 'Failed to add itemsss'
             ];
             $this->output->set_status_header(500)
                          ->set_content_type('application/json')
@@ -171,8 +173,12 @@ class Item extends MY_Controller {
         $upload_path = './files/';
         $config['upload_path'] = $upload_path;
         $config['allowed_types'] = 'gif|jpg|jpeg|png|bmp';
-        $config['max_size'] = 2048; // Maksimum ukuran file 2MB
-        $config['file_name'] = time() . '_' . $_FILES['image']['name']; // Penamaan file unik
+       
+        $config['file_name'] = time() . '_' . $file['name']; // Penamaan file unik
+    
+        error_log("Uploaded file name: " . $file['name']);
+        error_log("Uploaded file type: " . $file['type']);
+        error_log("Uploaded file extension: " . pathinfo($file['name'], PATHINFO_EXTENSION));
     
         // Memuat library upload
         $this->load->library('upload', $config);
@@ -183,11 +189,41 @@ class Item extends MY_Controller {
             error_log("Image upload error: " . $this->upload->display_errors());
             return false;
         } else {
-            // Jika upload berhasil, kembalikan path file
+            // Jika upload berhasil
             $data = $this->upload->data();
-            return $data['file_name'];
+            error_log("Uploaded file path: " . $data['full_path']);
+    
+            // Kompres gambar
+            $this->compress_image($data['full_path']);
+            return $data['file_name']; // Return nama file
         }
     }
+    
+    
+
+    private function compress_image($path) {
+        // Konfigurasi kompresi
+        $config['image_library'] = 'gd2'; // Gunakan GD2 untuk manipulasi gambar
+        $config['source_image'] = $path; // Path file gambar
+        $config['maintain_ratio'] = true; // Menjaga rasio aspek
+        $config['width'] = 800; // Lebar maksimum setelah kompresi
+        $config['height'] = 800; // Tinggi maksimum setelah kompresi
+        $config['quality'] = '80%'; // Kualitas kompresi
+    
+        // Memuat library Image Manipulation
+        $this->load->library('image_lib', $config);
+    
+        // Lakukan kompresi
+        if (!$this->image_lib->resize()) {
+            error_log("Image compression error: " . $this->image_lib->display_errors());
+        } else {
+            error_log("Image successfully compressed: " . $path);
+        }
+    
+        // Clear settings untuk manipulasi berikutnya
+        $this->image_lib->clear();
+    }
+    
     
     
     
@@ -198,7 +234,23 @@ class Item extends MY_Controller {
     /**
      * Update an existing item
      */
-    public function edit_item($item_id) {
+    public function edit_item()
+    {
+        // Mendapatkan ID item dari input
+        $id = $this->input->post('id');
+    
+        // Validasi apakah ID ada
+        if (empty($id)) {
+            $response = [
+                'status' => 'error',
+                'message' => 'Item ID is required'
+            ];
+            $this->output->set_status_header(400)
+                         ->set_content_type('application/json')
+                         ->set_output(json_encode($response));
+            return;
+        }
+    
         // Mendapatkan data yang dikirimkan melalui form-data
         $sku = $this->input->post('sku');
         $name = $this->input->post('name');
@@ -222,7 +274,7 @@ class Item extends MY_Controller {
         // Debugging untuk memeriksa apakah data berhasil diambil
         error_log("Received Form Data: " . print_r($_POST, true));
     
-        // Validasi data
+        // Validasi data minimal
         if (empty($sku) || empty($name) || empty($barcode) || empty($cost)) {
             $response = [
                 'status' => 'error',
@@ -234,11 +286,12 @@ class Item extends MY_Controller {
             return;
         }
     
-        // Handle gambar upload jika ada (jika gambar baru dikirimkan)
+        // Handle gambar upload jika ada
         $image = null;
         if (!empty($_FILES['image']['name'])) {
             // Panggil function untuk meng-handle upload gambar
             $image = $this->upload_image($_FILES['image']);
+    
             if (!$image) {
                 $response = [
                     'status' => 'error',
@@ -252,8 +305,8 @@ class Item extends MY_Controller {
         }
     
         // Panggil model edit_item dengan semua parameter yang diperlukan
-        $update_result = $this->model_item->edit_item(
-            $item_id,
+        $update_result = $this->model_item->update_item(
+            $id,
             $sku,
             $name,
             $barcode,
@@ -272,7 +325,7 @@ class Item extends MY_Controller {
             $trading_price,
             $bom_status,
             $status_sku,
-            $image // Menambahkan gambar baru jika ada
+            $image // Menambahkan gambar jika ada
         );
     
         // Mengecek apakah update berhasil
@@ -295,10 +348,32 @@ class Item extends MY_Controller {
         }
     }
     
+    
+    
     // Fungsi untuk meng-handle upload gambar
  
     
-    
+    /**
+ * Get item data by id
+ */
+public function get_item_by_id() {
+    $id = $this->input->get('id'); // Mengambil id dari query string
+
+    if ($id) {
+        $result = $this->model_item->get_item_by_id($id);
+        if ($result) {
+            $this->output->set_content_type('application/json')
+                         ->set_output(json_encode($result));
+        } else {
+            $this->output->set_status_header(404)
+                         ->set_output(json_encode(['message' => 'Item not found']));
+        }
+    } else {
+        $this->output->set_status_header(400)
+                     ->set_output(json_encode(['message' => 'ID parameter is missing']));
+    }
+}
+
 
     /**
      * Delete an item
